@@ -3,7 +3,6 @@ def start_screen():
     Sets a function for when a user arrives on the start page,
     asks the user for there name and welcomes user.
      - name input feild only accepts letters
-    gives two options, 1 to play or 2 for instructions
     """
     print(
         """
@@ -28,18 +27,39 @@ def start_screen():
             print("Name must be letters only\n")
         else:
             print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
-            break
+            menu()
 
+
+def menu():
+    """
+    menu function which gives the user two options
+    - Press 1 to play or 2 for instructions
+    - only accepts valid keys or error message comes up
+    """
     while True:
         user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
             play_game #undefined variable to add later on
         elif user_input == "I":
-            print("Instruction List............")
-            break
+            print(
+                "1.The computer will generate a random word and it's\n"
+                "your task to guess the letters from the word.\n"
+                "2.To guess, type a letter of your choice and hit enter.\n"
+                "3.If you guess correctly, the letter will be revealed.\n"
+                "4.If you guess incorrectly, you will lose a life and \n"
+                " the Hangman will start to appear.\n"
+                "5.You have 8 lives to guess the correct word.\n"
+    
+                "Good Luck!\n")
+            enter_input = input("Press Enter to go back to the menu\n").upper()
+            if enter_input == "":
+                menu()
+            else:
+                print("Oops look's like you pressed the wrong key!\n")
+            
         else:
             print("Invalid Character, please try again!\n")
-
+            
             
 
 
