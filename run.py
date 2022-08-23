@@ -1,4 +1,4 @@
-def start_game():
+def start_screen():
     """
     Sets a function for when a user arrives on the start page,
     asks the user for there name and welcomes user.
@@ -27,12 +27,23 @@ def start_game():
         if not name.isalpha():
             print("Name must be letters only\n")
         else:
-            print(f"Hello {name}, Welcome to Hangman and Good Luck!")
+            print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             break
+
+    while True:
+        user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
+        if user_input == "P":
+            play_game #undefined variable to add later on
+        elif user_input == "I":
+            print("Instruction List............")
+            break
+        else:
+            print("Invalid Character, please try again!\n")
+
             
 
 
     
 
 
-print(start_game())
+print(start_screen())
