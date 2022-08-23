@@ -1,10 +1,16 @@
+import os
+
+RED_COLOR = '\033[0;31m'
+YELLOW_COLOR = '\033[0;33m'
+
+
 def start_screen():
     """
     Sets a function for when a user arrives on the start page,
     asks the user for there name and welcomes user.
      - name input feild only accepts letters
     """
-    print(
+    print(RED_COLOR +
         """
            ___ _          _     _                      
           / __\ |__  _ __(_)___( )__                   
@@ -21,7 +27,7 @@ def start_screen():
     )
 
     while True:
-        name = input("Please Enter Your Name:\n")
+        name = input(YELLOW_COLOR + "Please Enter Your Name:\n")
         
         if not name.isalpha():
             print("Name must be letters only\n")
@@ -55,8 +61,8 @@ def menu():
             if enter_input == "":
                 menu()
             else:
-                print("Oops look's like you pressed the wrong key!\n")
-            
+                print(RED_COLOR + "Oops look's like you pressed the wrong key!\n")
+                
         else:
             print("Invalid Character, please try again!\n")
             
@@ -64,6 +70,5 @@ def menu():
 
 
     
-
 
 print(start_screen())
