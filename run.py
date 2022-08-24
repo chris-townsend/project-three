@@ -1,6 +1,7 @@
 import os
 import random
 from words import WORDS
+from hangman import hangman
 
 RED_COLOR = '\033[0;31m'
 YELLOW_COLOR = '\033[0;33m'
@@ -77,14 +78,15 @@ def randomword():
 
     for x in word:
         print("_", end=" ")
-
-
 # prints _ lines to show user how many letters in the word
 
 
-
-print(randomword())
-
-    
-
-
+print(hangman(0))
+print(hangman(1))
+print(hangman(2))
+print(hangman(3))
+print(hangman(4))
+print(hangman(5))
+print(hangman(6))
+print(hangman(7))
+print(hangman(8))
