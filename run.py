@@ -81,12 +81,17 @@ def randomword():
 # prints _ lines to show user how many letters in the word
 
 
-print(hangman(0))
-print(hangman(1))
-print(hangman(2))
-print(hangman(3))
-print(hangman(4))
-print(hangman(5))
-print(hangman(6))
-print(hangman(7))
-print(hangman(8))
+def printedWord(guessedLetters):
+    counter = 0
+    correctLetters = 0
+    for letter in word:
+        if (word in guessedLetters):
+            print(word[counter], end=" ")
+            correctLetters += 1
+        else:
+            print(" ", end=" ")
+        counter += 1
+    return correctLetters
+
+
+print()
