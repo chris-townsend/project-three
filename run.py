@@ -69,29 +69,11 @@ def menu():
         else:
             print("Invalid Character, please try again!\n")
             
-            
 def randomword():
     """
     A function that chooses a random word from words.py
     """
     word = random.choice(WORDS).upper()
 
-    for x in word:
-        print("_", end=" ")
-# prints _ lines to show user how many letters in the word
 
 
-def printedWord(guessedLetters):
-    counter = 0
-    correctLetters = 0
-    for letter in word:
-        if (word in guessedLetters):
-            print(word[counter], end=" ")
-            correctLetters += 1
-        else:
-            print(" ", end=" ")
-        counter += 1
-    return correctLetters
-
-
-print()
