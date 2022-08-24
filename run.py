@@ -1,4 +1,6 @@
 import os
+import random
+from words import WORDS
 
 RED_COLOR = '\033[0;31m'
 YELLOW_COLOR = '\033[0;33m'
@@ -71,4 +73,4 @@ def menu():
 
     
 
-print(start_screen())
+print(WORDS)
