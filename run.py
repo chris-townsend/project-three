@@ -8,7 +8,7 @@ YELLOW_COLOR = '\033[0;33m'
 
 def start_screen():
     """
-    Sets a function for when a user arrives on the start page,
+    Sets a function for when a user arrives on the start screen,
     asks the user for there name and welcomes user.
      - name input feild only accepts letters
     """
@@ -26,7 +26,7 @@ def start_screen():
         \/ /_/ \__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                            |___/                     
         """                                           
-    )
+        )
 
     while True:
         name = input(YELLOW_COLOR + "Please Enter Your Name:\n")
@@ -69,8 +69,22 @@ def menu():
             print("Invalid Character, please try again!\n")
             
             
+def randomword():
+    """
+    A function that chooses a random word from words.py
+    """
+    word = random.choice(WORDS).upper()
 
+    for x in word:
+        print("_", end=" ")
+
+
+# prints _ lines to show user how many letters in the word
+
+
+
+print(randomword())
 
     
 
-print(WORDS)
+
