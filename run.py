@@ -1,35 +1,15 @@
 import os
 import random
 from words import WORDS
-from diagrams import player_lost, player_won
+from diagrams import player_lost, player_won, header
 from hangman import hangman
 
-RED_COLOR = '\033[0;31m'
+
+
 YELLOW_COLOR = '\033[0;33m'
 
 
-def start_screen():
-    """
-    Sets a function for when a user arrives on the start screen,
-    asks the user for there name and welcomes user.
-     - name input feild only accepts letters
-    """
-    print(RED_COLOR +
-        """
-           ___ _          _     _                      
-          / __\ |__  _ __(_)___( )__                   
-         / /  | '_ \| '__| / __|/ __|                  
-        / /___| | | | |  | \__ \\__ \                  
-        \____/|_| |_|_|  |_|___/|___/                  
-                                                   
-          /\  /\__ _ _ __   __ _ _ __ ___   __ _ _ __  
-         / /_/ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-        / __  / (_| | | | | (_| | | | | | | (_| | | | |
-        \/ /_/ \__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                           |___/                     
-        """                                           
-        )
-
+def ask_for_name():
     while True:
         name = input(YELLOW_COLOR + "Please Enter Your Name:\n")
         
@@ -90,6 +70,7 @@ def check_letter(letter, word):
 
 def main():
     os.system("clear")
+    header()
     print(hangman[8-lives])
     print(' '.join([str(e) for e in reveal]))
     print(f"You have {lives} lives")
@@ -115,8 +96,5 @@ while game_is_won == False and lives > 0:
         player_lost()
         print(f"YOU FAILED the word was: {word}")
 
-
- 
-        
 
 
