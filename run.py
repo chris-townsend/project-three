@@ -48,7 +48,7 @@ def menu():
     while True:
         user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
-            play_game #undefined variable to add later on
+            play_game()  #undefined variable to add later on
         elif user_input == "I":
             print(
                 "1.The computer will generate a random word and it's\n"
@@ -76,4 +76,7 @@ def randomword():
     word = random.choice(WORDS).upper()
 
 
+
+
+    
 

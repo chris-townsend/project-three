@@ -1,86 +1,91 @@
 """
 File with Hangman diagrams for incorrect guesses 
 """
-def hangman(guesses):
-    if (guesses == 0):
-        print("  ________")
-        print("   |/      ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 1):
-        print("  ________")
-        print("   |/    |")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 2):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 3):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 4):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |    /| ")
-        print("   |        ")
-        print("   |        ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 5):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |    /|\\")
-        print("   |       ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 6):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |    /|\\")
-        print("   |     | ")
-        print("   |       ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 7):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |    /|\\")
-        print("   |     | ")
-        print("   |    /  ")
-        print("   |       ")
-        print("   ======")
-    elif (guesses == 8):
-        print("  ________")
-        print("   |/    |")
-        print("   |     O")
-        print("   |    /|\\")
-        print("   |     | ")
-        print("   |    / \\")
-        print("   |       ")
-        print("   ======")
+hangman = {
 
+0: """
+  ________
+   |/      
+   |       
+   |       
+   |       
+   |       
+   |       
+   ====== """,
+1: """
+  ________
+   |/    |
+   |       
+   |       
+   |       
+   |       
+   |       
+   ====== """,
+2: """
+  ________
+   |/    |
+   |     O
+   |       
+   |       
+   |       
+   |       
+   ====== """,
+3: """
+  ________
+   |/    |
+   |     O
+   |       
+   |       
+   |       
+   |       
+   ====== """,
+
+4: """
+  ________
+   |/    |
+   |     O
+   |    /| 
+   |        
+   |        
+   |       
+   ====== """,
+
+5:"""
+  ________
+   |/    |
+   |     O
+   |    /|\\
+   |    
+   |     
+   |     
+   ====== """,
+
+6: """
+  ________
+   |/    |
+   |     O
+   |    /|\\
+   |     | 
+   |       
+   |       
+   ====== """,
+
+7: """
+  ________
+   |/    |
+   |     O
+   |    /|\\
+   |     | 
+   |    /  
+   |       
+   ====== """,
+8: """
+  ________
+   |/    |
+   |     O
+   |    /|\\
+   |     | 
+   |    / \\
+   |       
+   ====== """
+}
