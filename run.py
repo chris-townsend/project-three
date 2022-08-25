@@ -1,6 +1,7 @@
 import os
 import random
 from words import WORDS
+from diagrams import player_lost, player_won
 from hangman import hangman
 
 RED_COLOR = '\033[0;31m'
@@ -70,7 +71,7 @@ def menu():
             print("Invalid Character, please try again!\n")
 
             
-word = random.choice(WORDS)
+word = "dog" #random.choice(WORDS)
 word = word.upper()
 reveal = list(len(word)*'_')
 lives = 8
@@ -106,6 +107,14 @@ while game_is_won == False and lives > 0:
         game_is_won = check_letter(guess, word)
     else:
         lives -= 1
+
+    if game_is_won:
+        player_won()
+        print(f"WELL DONE {name} ")
+    else:
+        player_lost()
+        print(f"YOU FAILED the word was: {word}")
+
 
  
         
