@@ -69,11 +69,26 @@ def menu():
         else:
             print("Invalid Character, please try again!\n")
             
-def randomword():
-    """
-    A function that chooses a random word from words.py
-    """
-    word = random.choice(WORDS).upper()
+
+
+word = random.choice(WORDS)  #Chooses a random word from words.py
+revealWord = list(len(word)*'_')
+print(revealWord)
+gameWon = False
+lives = 8
+
+while gameWon == False and lives > 0:
+    guess = input("Please guess a letter ")
+    guess = guess.upper()
+
+    if guess == word:
+        gameWon = True
+    else:
+        lives -= 1
+if gameWon:
+    print("Hooraahhh! you guessed correctly")
+else:
+    print(f"You lost{name}, the word was {word}")
 
 
 
