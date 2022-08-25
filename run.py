@@ -48,7 +48,7 @@ def menu():
     while True:
         user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
-            play_game()  #undefined variable to add later on
+            main()  #undefined variable to add later on
         elif user_input == "I":
             print(
                 "1.The computer will generate a random word and it's\n"
@@ -68,30 +68,46 @@ def menu():
                 
         else:
             print("Invalid Character, please try again!\n")
+
             
-
-
-word = random.choice(WORDS)  #Chooses a random word from words.py
-revealWord = list(len(word)*'_')
-print(revealWord)
-gameWon = False
+word = random.choice(WORDS)
+word = word.upper()
+reveal = list(len(word)*'_')
 lives = 8
+game_is_won = False
 
-while gameWon == False and lives > 0:
-    guess = input("Please guess a letter ")
+def check_letter(letter, word):
+    global reveal
+    for i in range(0,len(word)):
+        letter = word[i]
+        if guess == letter:
+            reveal[i] = guess
+    if '_' not in reveal:
+        return True
+    else:
+        return False
+
+def main():
+    os.system("clear")
+    print(hangman[8-lives])
+    print(' '.join([str(e) for e in reveal]))
+    print(f"You have {lives} lives")
+
+
+while game_is_won == False and lives > 0:
+    main()
+    guess = input('Guess a letter or an entire word:')
     guess = guess.upper()
 
     if guess == word:
-        gameWon = True
+        game_is_won = True
+        reveal = word
+    elif len(guess) == 1 and guess in word:
+        game_is_won = check_letter(guess, word)
     else:
         lives -= 1
-if gameWon:
-    print("Hooraahhh! you guessed correctly")
-else:
-    print(f"You lost{name}, the word was {word}")
 
+ 
+        
 
-
-
-    
 
