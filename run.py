@@ -18,6 +18,7 @@ def ask_for_name():
         else:
             print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             menu()
+    return name   
 
 
 def menu():
@@ -29,7 +30,7 @@ def menu():
     while True:
         user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
-            main()  #undefined variable to add later on
+            play()
         elif user_input == "I":
             print(
                 "1.The computer will generate a random word and it's\n"
@@ -50,6 +51,8 @@ def menu():
         else:
             print("Invalid Character, please try again!\n")
 
+
+
             
 word = "dog" #random.choice(WORDS)
 word = word.upper()
@@ -68,7 +71,42 @@ def check_letter(letter, word):
     else:
         return False
 
-def main():
+
+def restart_game():
+    """
+    Gives player option to restart, otherwise returns to menu
+    """
+    game_restart = False
+
+    while not game_restart:
+        restart = input("Would you like to play again?"
+                        "Y/N").upper()
+        try:
+            if restart == "Y":
+                game_restart = True
+
+                play()
+
+            elif restart == "N":
+                game_restart = True
+                print("\n")
+                header()
+                ask_for_name()
+                menu()
+
+            else:
+                raise ValueError(
+                "You must type in Y or N"
+                )
+
+        except ValueError as e:
+            print("\n You must type in Y or N Please try again.\n")
+
+
+
+
+
+def play():
     os.system("clear")
     header()
     print(hangman[8-lives])
@@ -77,7 +115,7 @@ def main():
 
 
 while game_is_won == False and lives > 0:
-    main()
+    play()
     guess = input('Guess a letter or an entire word:')
     guess = guess.upper()
 
@@ -91,10 +129,16 @@ while game_is_won == False and lives > 0:
 
     if game_is_won:
         player_won()
-        print(f"WELL DONE {name} ")
+        print("WELL DONE")
+        
     else:
         player_lost()
         print(f"YOU FAILED the word was: {word}")
+        
+
+restart_game()
+
+
 
 
 
