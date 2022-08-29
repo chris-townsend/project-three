@@ -4,9 +4,15 @@ from words import WORDS
 from diagrams import player_lost, player_won, header
 from hangman import hangman
 
-
-
 YELLOW_COLOR = '\033[0;33m'
+
+
+def play():
+    os.system("clear")
+    header()
+    print(hangman[8-lives])
+    print(' '.join([str(e) for e in reveal]))
+    print(f"You have {lives} lives")
 
 
 def ask_for_name():
@@ -18,7 +24,7 @@ def ask_for_name():
         else:
             print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             menu()
-    return name   
+        return
 
 
 def menu():
@@ -30,7 +36,10 @@ def menu():
     while True:
         user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
-            play()
+            lives = 8
+            game_is_won = False
+            break
+
         elif user_input == "I":
             print(
                 "1.The computer will generate a random word and it's\n"
@@ -53,7 +62,6 @@ def menu():
 
 
 
-            
 word = "dog" #random.choice(WORDS)
 word = word.upper()
 reveal = list(len(word)*'_')
@@ -103,15 +111,10 @@ def restart_game():
             print("\n You must type in Y or N Please try again.\n")
 
 
+header()
+ask_for_name()
 
 
-
-def play():
-    os.system("clear")
-    header()
-    print(hangman[8-lives])
-    print(' '.join([str(e) for e in reveal]))
-    print(f"You have {lives} lives")
 
 
 while game_is_won == False and lives > 0:
@@ -137,6 +140,14 @@ while game_is_won == False and lives > 0:
         
 
 restart_game()
+
+
+
+
+
+
+
+
 
 
 
