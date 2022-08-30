@@ -24,8 +24,10 @@ def ask_for_name():
         else:
             os.system("clear")
             header()
+            print(hangman[8-lives])
             print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             menu()
+            break
         return
 
 
