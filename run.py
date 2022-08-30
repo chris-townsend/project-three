@@ -22,6 +22,8 @@ def ask_for_name():
         if not name.isalpha():
             print("Name must be letters only\n")
         else:
+            os.system("clear")
+            header()
             print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             menu()
         return
