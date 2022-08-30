@@ -150,14 +150,17 @@ while game_is_won == False and lives > 0:
 
     if game_is_won:
         print("\n")
-        print(YELLOW + f"W E L L  D O N E")
+        print(YELLOW + "W E L L  D O N E")
         player_won()
         print(f"you guessed the correct word ~ {word} with {lives} lives left")
-        print("=============================================\n")
+        print(CYAN +"=============================================\n")
         
     else:
+        print("\n")
+        print(RED + "Y O U  F A I L E D")
         player_lost()
-        print( RED +f"YOU FAILED the word was: {word}")
+        print(RED + f"you ran out of lives ~ the word was: {word}")
+        print(CYAN +"=============================================\n")
         
     if game_is_won == True or lives <=0:        # Conditioned restart
         if restart_game() == True:
