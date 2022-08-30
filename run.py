@@ -110,9 +110,7 @@ def restart_game():
                 menu()
                 return True
             else:
-                raise ValueError(
-                "You must type in Y or N"
-                )
+                raise ValueError("You must type in Y or N")
 
         except ValueError as e:
             print("\n You must type in Y or N Please try again.\n")
@@ -160,6 +158,8 @@ while game_is_won == False and lives > 0:
         if restart_game() == True:
             game_is_won = False
             lives = 8
+            word = random.choice(WORDS)
+            word = word.upper()
             reveal = list(len(word)*'_')
 
 
