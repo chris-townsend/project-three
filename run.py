@@ -45,7 +45,7 @@ def menu():
     - only accepts valid keys or error message comes up
     """
     while True:
-        user_input = input("Press P to Play game\nPress I for Instructions\n").upper()
+        user_input = input(YELLOW +"Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
             lives = 8
             game_is_won = False
@@ -71,6 +71,7 @@ def menu():
             enter_input = input("Press Enter to go back to the menu\n").upper()
             if enter_input == "":
                 menu()
+                break
             else:
                 print(RED + "Oops look's like you pressed the wrong key!\n")
                 
@@ -104,7 +105,7 @@ def restart_game():
     game_restart = False
 
     while not game_restart:
-        restart = input("Would you like to play again?"
+        restart = input(YELLOW +"Would you like to play again?"
                         "Y/N").upper()
         try:
             if restart == "Y":
@@ -149,11 +150,11 @@ while game_is_won == False and lives > 0:
 
     if game_is_won:
         player_won()
-        print("WELL DONE")
+        print(YELLOW +"WELL DONE")
         
     else:
         player_lost()
-        print(f"YOU FAILED the word was: {word}")
+        print( RED +f"YOU FAILED the word was: {word}")
         
     if game_is_won == True or lives <=0:        # Conditioned restart
         if restart_game() == True:
