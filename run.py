@@ -4,28 +4,35 @@ from words import WORDS
 from diagrams import player_lost, player_won, header
 from hangman import hangman
 
-YELLOW_COLOR = '\033[0;33m'
+YELLOW = '\033[33m'
+RED = '\033[0;31m'
+BLUE = '\033[34m'
+MAGENTA = '\033[35m'
+CYAN = '\033[36m'
+WHITE = '\033[37m'
+CBLINK = '\33[5m'
+
 
 
 def play():
     os.system("clear")
     header()
-    print(hangman[8-lives])
+    print(hangman[9-lives])
     print(' '.join([str(e) for e in reveal]))
     print(f"You have {lives} lives")
 
 
 def ask_for_name():
     while True:
-        name = input(YELLOW_COLOR + "Please Enter Your Name:\n")
+        name = input(YELLOW + "Please Enter Your Name:\n")
         
         if not name.isalpha():
             print("Name must be letters only\n")
         else:
             os.system("clear")
             header()
-            print(hangman[8-lives])
-            print(f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
+            print(hangman[9-lives])
+            print(YELLOW + f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
             menu()
             break
         return
@@ -45,13 +52,19 @@ def menu():
             break
 
         elif user_input == "I":
-            print(
+            os.system("clear")
+            header()
+            print( YELLOW +
                 "1.The computer will generate a random word and it's\n"
                 "your task to guess the letters from the word.\n"
+                "\n"
                 "2.To guess, type a letter of your choice and hit enter.\n"
+                "\n"
                 "3.If you guess correctly, the letter will be revealed.\n"
+                "\n"
                 "4.If you guess incorrectly, you will lose a life and \n"
                 " the Hangman will start to appear.\n"
+                "\n"
                 "5.You have 8 lives to guess the correct word.\n"
     
                 "Good Luck!\n")
@@ -59,7 +72,7 @@ def menu():
             if enter_input == "":
                 menu()
             else:
-                print(RED_COLOR + "Oops look's like you pressed the wrong key!\n")
+                print(RED + "Oops look's like you pressed the wrong key!\n")
                 
         else:
             print("Invalid Character, please try again!\n")
@@ -123,7 +136,7 @@ ask_for_name()
 
 while game_is_won == False and lives > 0:
     play()
-    guess = input('Guess a letter or an entire word:')
+    guess = input(WHITE +'Guess a letter or an entire word:')
     guess = guess.upper()
 
     if guess == word:

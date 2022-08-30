@@ -1,8 +1,8 @@
-RED_COLOR = '\033[0;31m'
+RED = '\033[0;31m'
 
 
 def header():
-    print(RED_COLOR +
+    print(RED +
         """
            ___ _          _     _                      
           / __\ |__  _ __(_)___( )__                   
