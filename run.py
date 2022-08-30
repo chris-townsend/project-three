@@ -103,7 +103,7 @@ def restart_game():
                 play()
             elif restart == "N":
                 game_restart = True
-                print("\n")
+                os.system("clear")
                 header()
                 menu()
                 return True
