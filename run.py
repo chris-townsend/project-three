@@ -95,7 +95,7 @@ def restart_game():
                         "Y/N").upper()
         try:
             if restart == "Y":
-                game_restart = True
+                return True
 
                 play()
 
@@ -103,8 +103,8 @@ def restart_game():
                 game_restart = True
                 print("\n")
                 header()
-                ask_for_name()
                 menu()
+                return True
 
             else:
                 raise ValueError(
@@ -142,8 +142,12 @@ while game_is_won == False and lives > 0:
         player_lost()
         print(f"YOU FAILED the word was: {word}")
         
+    if game_is_won == True or lives <=0:        # Conditioned restart
+        if restart_game() == True:
+            game_is_won = False
+            lives = 8
+            reveal = list(len(word)*'_')
 
-restart_game()
 
 
 
