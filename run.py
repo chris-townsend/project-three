@@ -1,5 +1,5 @@
-import os
 import random
+import os
 from words import WORDS
 from diagrams import player_lost, player_won, header
 from hangman import hangman
@@ -12,14 +12,11 @@ CYAN = '\033[36m'
 WHITE = '\033[37m'
 CBLINK = '\33[5m'
 
-
-
-def play():
-    os.system("clear")
-    header()
-    print(hangman[9-lives])
-    print(' '.join([str(e) for e in reveal]))
-    print(f"You have {lives} lives")
+word = random.choice(WORDS)
+word = word.upper()
+reveal = list(len(word)*'_')
+lives = 8
+game_is_won = False
 
 
 def ask_for_name():
@@ -45,7 +42,7 @@ def menu():
     - only accepts valid keys or error message comes up
     """
     while True:
-        user_input = input(YELLOW +"Press P to Play game\nPress I for Instructions\n").upper()
+        user_input = input(YELLOW + "Press P to Play game\nPress I for Instructions\n").upper()
         if user_input == "P":
             lives = 8
             game_is_won = False
@@ -79,13 +76,6 @@ def menu():
             print("Invalid Character, please try again!\n")
 
 
-
-word = "dog" #random.choice(WORDS)
-word = word.upper()
-reveal = list(len(word)*'_')
-lives = 8
-game_is_won = False
-
 def check_letter(letter, word):
     global reveal
     for i in range(0,len(word)):
@@ -110,16 +100,13 @@ def restart_game():
         try:
             if restart == "Y":
                 return True
-
                 play()
-
             elif restart == "N":
                 game_restart = True
                 print("\n")
                 header()
                 menu()
                 return True
-
             else:
                 raise ValueError(
                 "You must type in Y or N"
@@ -132,7 +119,12 @@ def restart_game():
 header()
 ask_for_name()
 
-
+def play():
+    os.system("clear")
+    header()
+    print(hangman[9-lives])
+    print(' '.join([str(e) for e in reveal]))
+    print(f"You have {lives} lives")
 
 
 while game_is_won == False and lives > 0:
@@ -153,20 +145,22 @@ while game_is_won == False and lives > 0:
         print(YELLOW + "W E L L  D O N E")
         player_won()
         print(f"you guessed the correct word ~ {word} with {lives} lives left")
-        print(CYAN +"=============================================\n")
+        print(CYAN + "=============================================\n")
         
     else:
         print("\n")
         print(RED + "Y O U  F A I L E D")
         player_lost()
         print(RED + f"you ran out of lives ~ the word was: {word}")
-        print(CYAN +"=============================================\n")
+        print(CYAN + "=============================================\n")
         
     if game_is_won == True or lives <=0:        # Conditioned restart
         if restart_game() == True:
             game_is_won = False
             lives = 8
             reveal = list(len(word)*'_')
+
+
 
 
 
