@@ -67,6 +67,8 @@ def menu():
                 "Good Luck!\n")
             enter_input = input("Press Enter to go back to the menu\n").upper()
             if enter_input == "":
+                os.system("clear")
+                header()
                 menu()
                 break
             else:
