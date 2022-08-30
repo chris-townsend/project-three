@@ -149,8 +149,11 @@ while game_is_won == False and lives > 0:
         lives -= 1
 
     if game_is_won:
+        print("\n")
+        print(YELLOW + f"W E L L  D O N E")
         player_won()
-        print(YELLOW +"WELL DONE")
+        print(f"you guessed the correct word ~ {word} with {lives} lives left")
+        print("=============================================\n")
         
     else:
         player_lost()
