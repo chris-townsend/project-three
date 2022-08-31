@@ -9,8 +9,8 @@ WORDS = [
     'soft',
     'purring',
     'uppity',
-    'imaginary'
-    'sort',''
+    'imaginary',
+    'sort',
     'slip',
     'beds',
     'grate',
@@ -299,4 +299,3 @@ WORDS = [
     'name',
     'last'
 ]
-
