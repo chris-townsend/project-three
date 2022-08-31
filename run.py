@@ -1,3 +1,7 @@
+"""
+random module used to generate a random word from words.py
+os module used to generate colours and clear the console
+"""
 import random
 import os
 from words import WORDS
@@ -12,14 +16,20 @@ CYAN = '\033[36m'
 WHITE = '\033[37m'
 CBLINK = '\33[5m'
 
+LIVES = 8
+GAME_WON = False
 word = random.choice(WORDS)
 word = word.upper()
 reveal = list(len(word)*'_')
-LIVES = 8
-GAME_WON = False
 
 
 def ask_for_name():
+    """
+    Ask a user for there name on game start up,
+    - isalpha() used to only accept letters.
+    When user enters name correctly, clear console and
+    welcome user with welcome message, hangman diagram and menu option
+    """
     while True:
         name = input(YELLOW + "Please Enter Your Name:\n")
         if not name.isalpha():
@@ -77,7 +87,10 @@ def menu():
 
 def restart_game():
     """
-    Gives player option to restart, otherwise returns to menu
+    Function to restart game at end of play
+    Gives the user two options, Y to play again or
+    N to clear the console and return to menu with hangman diagram
+    Incorrect letter results in ValueError message
     """
     game_restart = False
 
