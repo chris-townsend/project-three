@@ -15,7 +15,7 @@ CBLINK = '\33[5m'
 word = random.choice(WORDS)
 word = word.upper()
 reveal = list(len(word)*'_')
-lives = 8
+LIVES = 8
 game_is_won = False
 
 
@@ -27,7 +27,7 @@ def ask_for_name():
         else:
             os.system("clear")
             header()
-            print(hangman[9-lives])
+            print(hangman[9-LIVES])
             print(YELLOW + f"Hello {name},"
                   "Welcome to Chris's Hangman and Good Luck!\n")
             menu()
@@ -107,9 +107,9 @@ ask_for_name()
 def play():
     os.system("clear")
     header()
-    print(hangman[9-lives])
+    print(hangman[9-LIVES])
     print(' '.join([str(e) for e in reveal]))
-    print(f"You have {lives} lives")
+    print(f"You have {LIVES} lives")
 
 
 def check_letter(letter, word):
@@ -124,7 +124,7 @@ def check_letter(letter, word):
         return False
 
 
-while game_is_won is False and lives > 0:
+while game_is_won is False and LIVES > 0:
     play()
     guess = input(WHITE + 'Guess a letter or an entire word:')
     guess = guess.upper()
@@ -135,12 +135,12 @@ while game_is_won is False and lives > 0:
     elif len(guess) == 1 and guess in word:
         game_is_won = check_letter(guess, word)
     else:
-        lives -= 1
+        LIVES -= 1
     if game_is_won:
         print("\n")
         print(YELLOW + "W E L L  D O N E")
         player_won()
-        print(f"you guessed the correct word ~ {word} with {lives} lives left")
+        print(f"you guessed the correct word ~ {word} with {LIVES} lives left")
         print(CYAN + "=============================================\n")
     else:
         print("\n")
@@ -148,10 +148,10 @@ while game_is_won is False and lives > 0:
         player_lost()
         print(RED + f"you ran out of lives ~ the word was: {word}")
         print(CYAN + "=============================================\n")
-    if game_is_won is True or lives <= 0:        # Conditioned restart
+    if game_is_won is True or LIVES <= 0:        # Conditioned restart
         if restart_game() is True:
             game_is_won = False
-            lives = 8
+            LIVES = 8
             word = random.choice(WORDS)
             word = word.upper()
             reveal = list(len(word)*'_')
