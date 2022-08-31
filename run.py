@@ -151,8 +151,8 @@ while game_is_won == False and lives > 0:
         player_lost()
         print(RED + f"you ran out of lives ~ the word was: {word}")
         print(CYAN + "=============================================\n")
-    if game_is_won == True or lives <= 0:        # Conditioned restart
-        if restart_game() is True: # check
+    if game_is_won is True or lives <= 0:        # Conditioned restart
+        if restart_game() is True:
             game_is_won = False
             lives = 8
             word = random.choice(WORDS)
