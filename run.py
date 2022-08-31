@@ -127,7 +127,7 @@ def play():
     print(f"You have {lives} lives")
 
 
-while game_is_won == False and lives > 0:
+while game_is_won is False and lives > 0:
     play()
     guess = input(WHITE + 'Guess a letter or an entire word:')
     guess = guess.upper()
