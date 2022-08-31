@@ -28,7 +28,8 @@ def ask_for_name():
             os.system("clear")
             header()
             print(hangman[9-lives])
-            print(YELLOW + f"Hello {name}, Welcome to Chris's Hangman and Good Luck!\n")
+            print(YELLOW + f"Hello {name},"
+                  "Welcome to Chris's Hangman and Good Luck!\n")
             menu()
             break
         return
@@ -41,7 +42,8 @@ def menu():
     - only accepts valid keys or error message comes up
     """
     while True:
-        user_input = input(YELLOW + "Press P to Play game\nPress I for Instructions\n").upper()
+        user_input = input(YELLOW + "Press P to Play game\n"
+                           "Press I for Instructions\n").upper()
         if user_input == "P":
             lives = 8
             game_is_won = False
