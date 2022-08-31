@@ -1,7 +1,13 @@
+"""
+Variable RED used to add colour to diagrams
+"""
 RED = '\033[0;31m'
 
 
 def header():
+    """
+    Prints main header 'Chris's Hangman' in colour Red
+    """
     print(RED +
           """
              ___ _          _     _
@@ -19,6 +25,9 @@ def header():
 
 
 def player_lost():
+    """
+    Prints 'Game over' when user's lives reach 0
+    """
     print(
         """
            ___
@@ -31,6 +40,9 @@ def player_lost():
 
 
 def player_won():
+    """
+    Prints 'You Win' when a user correctly guesses a word
+    """
     print(
         """
         __   __            _    _ _       _
