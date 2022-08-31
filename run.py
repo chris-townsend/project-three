@@ -16,7 +16,7 @@ word = random.choice(WORDS)
 word = word.upper()
 reveal = list(len(word)*'_')
 LIVES = 8
-game_is_won = False
+GAME_WON = False
 
 
 def ask_for_name():
@@ -124,19 +124,19 @@ def check_letter(letter, word):
         return False
 
 
-while game_is_won is False and LIVES > 0:
+while GAME_WON is False and LIVES > 0:
     play()
     guess = input(WHITE + 'Guess a letter or an entire word:')
     guess = guess.upper()
 
     if guess == word:
-        game_is_won = True
+        GAME_WON = True
         reveal = word
     elif len(guess) == 1 and guess in word:
-        game_is_won = check_letter(guess, word)
+        GAME_WON = check_letter(guess, word)
     else:
         LIVES -= 1
-    if game_is_won:
+    if GAME_WON:
         print("\n")
         print(YELLOW + "W E L L  D O N E")
         player_won()
@@ -148,9 +148,9 @@ while game_is_won is False and LIVES > 0:
         player_lost()
         print(RED + f"you ran out of lives ~ the word was: {word}")
         print(CYAN + "=============================================\n")
-    if game_is_won is True or LIVES <= 0:        # Conditioned restart
+    if GAME_WON is True or LIVES <= 0:        # Conditioned restart
         if restart_game() is True:
-            game_is_won = False
+            GAME_WON = False
             LIVES = 8
             word = random.choice(WORDS)
             word = word.upper()
