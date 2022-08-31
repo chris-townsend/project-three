@@ -45,8 +45,6 @@ def menu():
         user_input = input(YELLOW + "Press P to Play game\n"
                            "Press I for Instructions\n").upper()
         if user_input == "P":
-            #lives = 8
-            #game_is_won = False
             break
 
         elif user_input == "I":
@@ -77,18 +75,6 @@ def menu():
             print("Invalid Character, please try again!\n")
 
 
-def check_letter(letter, word):
-    global reveal
-    for i in range(0, len(word)):
-        letter = word[i]
-        if guess == letter:
-            reveal[i] = guess
-    if '_' not in reveal:
-        return True
-    else:
-        return False
-
-
 def restart_game():
     """
     Gives player option to restart, otherwise returns to menu
@@ -101,7 +87,6 @@ def restart_game():
         try:
             if restart == "Y":
                 return True
-                #play()
             elif restart == "N":
                 game_restart = True
                 os.system("clear")
@@ -125,6 +110,18 @@ def play():
     print(hangman[9-lives])
     print(' '.join([str(e) for e in reveal]))
     print(f"You have {lives} lives")
+
+
+def check_letter(letter, word):
+    global reveal
+    for i in range(0, len(word)):
+        letter = word[i]
+        if guess == letter:
+            reveal[i] = guess
+    if '_' not in reveal:
+        return True
+    else:
+        return False
 
 
 while game_is_won is False and lives > 0:
