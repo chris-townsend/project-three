@@ -45,8 +45,8 @@ def menu():
         user_input = input(YELLOW + "Press P to Play game\n"
                            "Press I for Instructions\n").upper()
         if user_input == "P":
-            lives = 8
-            game_is_won = False
+            #lives = 8
+            #game_is_won = False
             break
 
         elif user_input == "I":
@@ -101,7 +101,7 @@ def restart_game():
         try:
             if restart == "Y":
                 return True
-                play()
+                #play()
             elif restart == "N":
                 game_restart = True
                 os.system("clear")
@@ -111,7 +111,7 @@ def restart_game():
             else:
                 raise ValueError("You must type in Y or N")
 
-        except ValueError as e:
+        except ValueError:
             print("\n You must type in Y or N Please try again.\n")
 
 
