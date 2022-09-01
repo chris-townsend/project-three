@@ -150,17 +150,18 @@ def check_letter(letter, key_word):
 # Prints either player_won or player_lost at end of gameplay,
 # with a choice to restart
 
+
 while GAME_WON is False and LIVES > 0:
     display()
     guess = input(WHITE + 'Guess a letter or an entire word:')
     guess = guess.upper()
-
     if guess == word:
         GAME_WON = True
         reveal = word
     elif len(guess) == 1 and guess in word:
         GAME_WON = check_letter(guess, word)
     else:
+        print("You guessed the same letter")
         LIVES -= 1
     if GAME_WON:
         print("\n")
@@ -168,7 +169,7 @@ while GAME_WON is False and LIVES > 0:
         player_won()
         print(f"you guessed the correct word ~ {word} with {LIVES} lives left")
         print(CYAN + "=============================================\n")
-    else:
+    elif LIVES == 0:
         print("\n")
         print(RED + "Y O U  F A I L E D")
         player_lost()
