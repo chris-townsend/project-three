@@ -135,7 +135,7 @@ def check_letter(letter, key_word):
     A function that checks if the letter is within the key_word
     Function returns True if won
     """
-    for i in range(0, len(key_word)):
+    for i, letter in enumerate(key_word, 0):
         letter = key_word[i]
         if guess == letter:
             REVEAL[i] = guess
