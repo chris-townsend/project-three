@@ -118,6 +118,11 @@ ask_for_name()
 
 
 def display():
+    """
+    Clears the console and displays the hangman diagram
+    depending on how many lives left and guesses taken
+    Reveals a letter if the letters within the correct word
+    """
     os.system("clear")
     header()
     print(hangman[9-LIVES])
