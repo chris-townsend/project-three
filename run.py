@@ -133,10 +133,8 @@ def display():
 def check_letter(letter, key_word):
     """
     A function that checks if the letter is within the key_word
-    Using global to change reveal outside local scope
     Function returns True if won
     """
-    global REVEAL
     for i in range(0, len(key_word)):
         letter = key_word[i]
         if guess == letter:
