@@ -20,7 +20,7 @@ LIVES = 8
 GAME_WON = False
 word = random.choice(WORDS)
 word = word.upper()
-reveal = list(len(word)*'_')
+REVEAL = list(len(word)*'_')
 
 
 def ask_for_name():
@@ -37,7 +37,7 @@ def ask_for_name():
         else:
             os.system("clear")
             header()
-            print(hangman[9-LIVES])
+            print(hangman[8-LIVES])
             print(YELLOW + f"Hello {name},"
                   "Welcome to Chris's Hangman and Good Luck!\n")
             menu()
@@ -125,8 +125,8 @@ def display():
     """
     os.system("clear")
     header()
-    print(hangman[9-LIVES])
-    print(' '.join([str(e) for e in reveal]))
+    print(hangman[8-LIVES])
+    print(' '.join([str(e) for e in REVEAL]))
     print(f"You have {LIVES} lives")
 
 
@@ -136,12 +136,12 @@ def check_letter(letter, key_word):
     Using global to change reveal outside local scope
     Function returns True if won
     """
-    global reveal
+    global REVEAL
     for i in range(0, len(key_word)):
         letter = key_word[i]
         if guess == letter:
-            reveal[i] = guess
-    if '_' not in reveal:
+            REVEAL[i] = guess
+    if '_' not in REVEAL:
         return True
     else:
         return False
@@ -182,4 +182,4 @@ while GAME_WON is False and LIVES > 0:
             LIVES = 8
             word = random.choice(WORDS)
             word = word.upper()
-            reveal = list(len(word)*'_')
+            REVEAL = list(len(word)*'_')
