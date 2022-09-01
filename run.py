@@ -125,10 +125,10 @@ def play():
     print(f"You have {LIVES} lives")
 
 
-def check_letter(letter, word):
+def check_letter(letter, key_word):
     global reveal
-    for i in range(0, len(word)):
-        letter = word[i]
+    for i in range(0, len(key_word)):
+        letter = key_word[i]
         if guess == letter:
             reveal[i] = guess
     if '_' not in reveal:
