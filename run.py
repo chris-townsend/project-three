@@ -117,7 +117,7 @@ header()
 ask_for_name()
 
 
-def play():
+def display():
     os.system("clear")
     header()
     print(hangman[9-LIVES])
@@ -126,6 +126,11 @@ def play():
 
 
 def check_letter(letter, key_word):
+    """
+    A function that checks if the letter is within the key_word
+    Using global to change reveal outside local scope
+    Function returns True if won
+    """
     global reveal
     for i in range(0, len(key_word)):
         letter = key_word[i]
@@ -137,8 +142,13 @@ def check_letter(letter, key_word):
         return False
 
 
+# Main Game logic which checks if word has been guessed
+# within 8 lives
+# Prints either player_won or player_lost at end of gameplay,
+# with a choice to restart
+
 while GAME_WON is False and LIVES > 0:
-    play()
+    display()
     guess = input(WHITE + 'Guess a letter or an entire word:')
     guess = guess.upper()
 
