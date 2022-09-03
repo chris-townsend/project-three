@@ -38,7 +38,7 @@ def ask_for_name():
             os.system("clear")
             header()
             print(hangman[8-LIVES])
-            print(YELLOW + f"Hello {name},"
+            print(YELLOW + f"Hello {name}, "
                   "Welcome to Chris's Hangman and Good Luck!\n")
             menu()
             break
@@ -100,7 +100,6 @@ def restart_game():
                         "Y/N").upper()
         try:
             if restart == "Y":
-                os.system("clear")
                 return True
             elif restart == "N":
                 game_restart = True
