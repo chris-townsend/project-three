@@ -38,6 +38,7 @@ def ask_for_name():
             os.system("clear")
             header()
             print(hangman[8-LIVES])
+            print("\n")
             print(YELLOW + f"Hello {name}, "
                   "Welcome to Chris's Hangman and Good Luck!\n")
             menu()
