@@ -100,6 +100,7 @@ def restart_game():
                         "Y/N").upper()
         try:
             if restart == "Y":
+                os.system("clear")
                 return True
             elif restart == "N":
                 game_restart = True
