@@ -77,6 +77,7 @@ def menu():
             if enter_input == "":
                 os.system("clear")
                 header()
+                print(hangman[8-LIVES])
                 menu()
                 break
             else:
@@ -104,6 +105,7 @@ def restart_game():
                 game_restart = True
                 os.system("clear")
                 header()
+                print(hangman[8-LIVES])
                 menu()
                 return True
             else:
@@ -161,7 +163,6 @@ while GAME_WON is False and LIVES > 0:
     elif len(guess) == 1 and guess in word:
         GAME_WON = check_letter(guess, word)
     else:
-        print("You guessed the same letter")
         LIVES -= 1
     if GAME_WON:
         print("\n")
