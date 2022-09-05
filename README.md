@@ -8,7 +8,7 @@
 ## Repository
 [https://github.com/chris-townsend/project-three](https://github.com/chris-townsend/project-three)
 
-![Am I responsive](./readme-content/images/am-i-responsive-hangman.webp)
+![Am I responsive](./readme-content/images/chris-hangman.webp)
 ***
 
 ## Contents
