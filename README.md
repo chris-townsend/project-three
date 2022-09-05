@@ -8,7 +8,7 @@
 ## Repository
 [https://github.com/chris-townsend/project-three](https://github.com/chris-townsend/project-three)
 
-![Am I responsive](./assets/images/readme-images/am-i-responsive.webp)
+![Am I responsive](./readme-content/images/am-i-responsive-hangman.webp)
 ***
 
 ## Contents
@@ -43,14 +43,13 @@
 
 ## Objective
 #
-In this project I intend to make a small game which is easily understood and intuitive to play. It will be based on the classic arcade game Whack-A-Mole where you are given a mallet to hit the moles; as they pop out, you are given a point for each mole hit. I'll be using HTML, CSS and JavaScript to make the game and it's designed to be a fun and entertaining game to help pass time. 
+In this project I intend to design a hangman game using Python, the project should run in a CLI and deployed using Heroku. The computer will generate a random word and the user will have 8 lives to guess the correct word by inputting letters or whole words. 
 
 ***
 
 ## Brief
 # 
-The game will be designed for a target audience of 8 years +. The game will be easily laid out with an instruction pop up modal on the homepage. The site will have clear images and sounds responsive to actions made by the user. The game music will have an option to play/pause and stop to prevent auto playing and give the user a call of action. The game will be timed and the user will know how much time is remaining from the countdown tab above the game board.  
-
+The game will be designed for a target audience of 12 years + as some of the words are hard to guess. The game will ask for a username to make it more personal to the user and it will contain a menu with command keys to be input. If incorrect keys are inputted, the user will be presented with an error message. The finished product should be error free, give clear instructions regarding use and valid inputs and have a varied amount of words to allow replayabillity. 
 ***
 
 ## User Experience (UX)
@@ -60,17 +59,13 @@ The game will be designed for a target audience of 8 years +. The game will be e
 
     - As a first time user, I want to easily understand how to play the game.
 
-    - As a user I want the ability to control any background sounds playing. 
-
     - As a user I want to be able to see my current score.
 
     - As a user I want to receive an alert at the end of gameplay with my final score. 
 
     - As a user I want simple gameplay which is easy to play again.
 
-    - As a frequent user, I want to check to see if there are any new games available to play by clicking on the developers social media icons clearly laid out at the bottom of the contact and Instructions modal. 
-
-    - As a user I want the ability to play the game on multiple devices.
+    - As a returning user, If I play again, I want different words to guess
     
      ***
 
