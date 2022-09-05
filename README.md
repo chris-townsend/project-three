@@ -17,8 +17,7 @@
 - [User Experience(UX)](#user-experience-ux)
 - [Design](#design)
     - [Colour Scheme](#colour-scheme)
-    - [Typography](#typography)
-- [Wireframes](#Wireframes)
+- [Logic & Flow](#logic-&-flow)
 - [Features](#Features)
     - [Features Left to Implement](#Future-Features)
     - [Languages Used](#languages-Used)
@@ -49,7 +48,7 @@ In this project I intend to design a hangman game using Python, the project shou
 
 ## Brief
 # 
-The game will be designed for a target audience of 12 years + as some of the words are hard to guess. The game will ask for a username to make it more personal to the user and it will contain a menu with command keys to be input. If incorrect keys are inputted, the user will be presented with an error message. The finished product should be error free, give clear instructions regarding use and valid inputs and have a varied amount of words to allow replayabillity. 
+The game will be designed for a target audience of 12 years + as some of the words are hard to guess, however the game will be fun to play by all, especially developers who want to take 5 minutes out. The game will ask for a username to make it more personal to the user and it will contain a menu with command keys to be input. If incorrect keys are inputted, the user will be presented with an error message. The finished product should be error free, give clear instructions regarding use and valid inputs and have a varied amount of words to allow replayabillity. 
 ***
 
 ## User Experience (UX)
@@ -73,42 +72,20 @@ The game will be designed for a target audience of 12 years + as some of the wor
 #
 -   #### Colour Scheme
     
-     - The colour scheme was picked using coolers. I used these colours because I felt they complimented each other well, It gives the game a fun and cheerful feel and the contrast works well for user reading accessibility. The game buttons on the homepage and game page have been styled using a background linear-gradient to add to the styled effect.
+ The colour scheme for this project relies heavily on the colours available through a system call called OS which is built-in within Python. The package has allowed a few colours to be applied to text within the terminal. The colours outside the terminal have been designed to match the style of the game. The 'Run Program' button has the original style with added style to the scroll bar to make it blend in with the terminal screen. Contrast checks have been done to ensure the 'Run Program' button and text present are of a high enough contrast to be easily read.
 
-    ![Colour-scheme](./assets/images/readme-images/coolers-colour-scheme.webp)
+![Colour-scheme](./readme-content/images/colour-scheme.webp)
 
-    ***
-    -   #### Typography
-    #
-    The fonts are imported into the CSS file from *[Google Fonts](https://fonts.google.com/)* 
-
-    - The **Montserrat Alternates** font is the main font used throughout the game with **Sans Serif** as the fallback font in case for any reason the font isn't being imported into the site correctly. **Montserrat Alternates** was chosen because it has clear lettering which allows easy reading accessibility for the user. The buttons on the game page are styled with the **Montserrat Alternates** font and this nicely contrasts with the background colour. 
- 
-    ![Font Montserrat Alternates](./assets/images/readme-images/font-main-heading.webp)
-
-    ![Font Montserrat Alternates game buttons](./assets/images/readme-images/home-buttons-contact.webp)
-
-
-    ***
+***
+   
         
-*   ### Wireframes
-#
-When I first designed my wireframes, I wanted to include a high score list. As time caught up on me I decided to change this to a contact form instead. 
-
--   Desktop Wireframe Home page  -
-    ![Desktop Home Wireframe](./assets/images/readme-images/wireframe-homepage-desktop.webp)
-
--   Desktop Wireframe Game page  - 
-    ![Desktop Game page ](./assets/images/readme-images/wireframe-gamepage-desktop.webp)
+*   ### Logic & Flow
+# 
+- During the planning phase of this project I spent some time planning the logic behind the application. I created a flow chart which allowed me to follow the application as the project was being built. The chart has been made using [Diagrams.net](https://www.diagrams.net/) 
 
 
--   Mobile Wireframe Home page -
+![Logic Flow Chart](./readme-content/images/hangman-flowchart.webp)
 
-     ![Mobile Home Wireframe](./assets/images/readme-images/wireframe-homepage-mobile.webp)
-
--   Mobile Wireframe Game page -
-
-     ![Mobile Game Wirefame](./assets/images/readme-images/wireframe-gamepage-mobile.webp)
 
 
 
