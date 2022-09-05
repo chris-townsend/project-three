@@ -236,37 +236,22 @@ With more time, I would have liked to of implemented the following ideas:
 
 ## Testing
 #
+### W3C Validator
+The W3C HTML & CSS Validator was used to validate the project, the results are shown below with no errors.
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. The results are shown below:
-
--   [W3C HTML Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchris-townsend.github.io%2Fproject-two%2Findex.html) Results Homepage
-
--   [W3C HTML Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchris-townsend.github.io%2Fproject-two%2Fgame.html) Results Gamepage
-
-### Homepage
-![W3C HTML Validator Index page](./assets/images/readme-images/w3c-result-homepage.webp)
-### Game Page
-![W3C HTML Validator Game page](./assets/images/readme-images/w3c-result-gamepage.webp)
-
--   [W3C CSS Markup Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchris-townsend.github.io%2Fproject-two%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) Results
-
-![W3C CSS Validator Result](./assets/images/readme-images/w3c-css-result.webp)
+#### [HTML Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchris-hangman.herokuapp.com%2F)
+![W3C HTML Validator Index page](./readme-content/images/w3c-html-result.webp)
+#### [CSS Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchris-hangman.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+![W3C CSS Validator result](./readme-content/images/w3c-css-result.webp)
 
 
-I have run the website through Google Chrome's Lighthouse audit application and the results are shown below:
+### Google Lighthouse 
 
-- Mobile
-### Lighthouse Homepage
+I have run the site through Google Chrome's Lighthouse audit application and the results are shown below:
+
 ![Lighthouse result for mobile homepage](./assets/images/readme-images/homepage-mobile-lighthouse.webp)
-###  Lighthouse Game Page
-![Lighthouse result for mobile game page](./assets/images/readme-images/gamepage-mobile-lighthouse.webp)
 
 
-- Desktop
-### Homepage
-![Lighthouse result for desktop homepage](./assets/images/readme-images/homepage-desktop-lighthouse.webp)
-### Game Page
-![Lighthouse result for desktop game page](./assets/images/readme-images/gamepage-desktop-lighthouse.webp)
 
 I have run the website through JSHint's audit application and the results are shown below:
 
