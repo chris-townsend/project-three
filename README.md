@@ -370,28 +370,47 @@ There was a couple of warnings stating that the type attribute was unnecessary f
 ## Deployment
 
 
-### GitHub Pages
+### Heroku
 #
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed to Heroku using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-![GitHub Repository](./assets/images/readme-images/locate-github-repositorie.webp)
+1. Log in to your [Heroku dashboard](https://dashboard.heroku.com/apps) and click 'New' at the top right. Select 'Create new app' from the drop-down menu.  
+![Heroku dashboard](./readme-content/images/heroku-dashboard.webp)
+![Heroku drop-down menu](./readme-content/images/heroku-create-new-app.webp)
 
-2. At the top of the Repository, locate the "Settings" Button on the menu.
-![Settings Button](./assets/images/readme-images/locate-repositorie-settings.webp)    
+2. Create a meaningful name for your app and select the correct region for your location.
+![Heroku create app](./readme-content/images/heroku-created-app.webp)    
 
-3. Select "Pages" from the menu on the left-hand side.
+3. Select "Settings" from the tabs at the top of the screen.
 
-    ![Pages Section](./assets/images/readme-images/menu-pages.webp)
+    ![Settings](./readme-content/images/heroku-settings.webp)
 
-4. Under "Source", click the drop down bar and select "Main Branch" and click save.
-![Main Branch](./assets/images/readme-images/source-branch.webp)
+4. Select "Reveal Config Vars".
 
-5. The page will automatically refresh and will take a short time to publish the page. The page should turn green once the site has been deployed.
-![Refresh](./assets/images/readme-images/ready-to-publish-site.webp)
+    ![Reveal Config Vars](./readme-content/images/heroku-reveal-config-vars.webp)
 
-6. Scroll back down through the page to locate the published site [link](https://github.com) in the "GitHub Pages" section.
-![Published URL](./assets/images/readme-images/your-site-is-published.webp)
+    - Input `PORT` and `8000` as one config var and click add.  
+    - Input `CREDS` and the content of your Google Sheet API creds file as another
+      config var and click add. 
+
+      *This step is only applicable if your using a Google sheet API to add*
+
+    ![Config Vars](./readme-content/images/heroku-config-vars.webp)
+
+5. Select 'Add buildpack' from the Settings tab.
+    ![Add buildpack](./readme-content/images/heroku-add-buildpack.webp)
+
+6. From the list of buildpacks, Add 'Python' and 'Nodejs' and click save changes.
+![Select buildpack](./readme-content/images/heroku-python-buildpack.webp)
+
+ - Python must be the first buildpack, followed by Nodejs. The buildpacks can be dragged into position.
+![Correct buildpack List](./readme-content/images/heroku-buildpack-config.webp)
+
+7. Select 'Deploy' from the tabs section at the top of the page.
+![Deploy from Tabs](./readme-content/images/heroku-deploy-tabs.webp)
+
+ - Select 'Connect to GitHub' from deployment method. 
+ ![Connect to GitHub](./readme-content/images/heroku-deployment-method.webp)
 
 ### Forking the GitHub Repository
 #
