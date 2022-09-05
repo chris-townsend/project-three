@@ -236,8 +236,27 @@ With more time, I would have liked to of implemented the following ideas:
 
 ## Testing
 #
+### Python Testing
+
+I have performed multiple tests manually through-out the development of the project, this includes on the deployed site and in the local gitpod terminal. I have purposefully inputted incorrect data to confirm error messages were capturing wrong inputs. The code has been tested through the [PEP8](http://pep8online.com/) Linter and the results are shown below:
+
+### PEP 8
+
+#### run.py
+![PEP8 run.py result](./readme-content/images/pep8-result-run.py.webp)
+#### words.py
+![PEP8 words.py result](./readme-content/images/pep8-result-words.py.webp)
+#### hangman.py
+![PEP8 hangman.py result]()
+#### diagrams.py
+![PEP8 hangman.py result]()
+
+
+
+
+
 ### W3C Validator
-The W3C HTML & CSS Validator was used to validate the project, the results are shown below with no errors.
+- The W3C HTML & CSS Validator was used to validate the project, the results are shown below with no errors.
 
 #### [HTML Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchris-hangman.herokuapp.com%2F)
 ![W3C HTML Validator Index page](./readme-content/images/w3c-html-result.webp)
@@ -247,24 +266,17 @@ The W3C HTML & CSS Validator was used to validate the project, the results are s
 
 ### Google Lighthouse 
 
-I have run the site through Google Chrome's Lighthouse audit application and the results are shown below:
+- I have run the site through Google Chrome's Lighthouse audit application and the results are shown below:
 
-![Lighthouse result for mobile homepage](./assets/images/readme-images/homepage-mobile-lighthouse.webp)
-
-
-
-I have run the website through JSHint's audit application and the results are shown below:
-
-### JSHint Homepage
-The results for the homepage show no significant errors but emailjs is showing up as a undefined variable. This is part of the emailJS API which is linked in the head of the HTML document. SendMail is showing up as an unused variable but this is being used in the HTML document as an on click. The *stop* unused variable warning which is in fact a function is being used as an on click to stop the music playing on my homepage, All unused variable warnings have been tested to ensure there being used and working correctly. I was getting conflicting errors at first from code being used on different pages. To prevent the errors I made a game.js page to house all the game JavaScript code. The script.js file contains the cursor variable which allows the mallet cursor to work on all pages.
-![JSHint Homepage results (home.js)](./assets/images/readme-images/homepage-jshint.webp)
+![Lighthouse result](./readme-content/images/lighthouse-result.webp)
 
 
-### JSHint Gamepage 
-![JSHint Game page results (game.js)](./assets/images/readme-images/gamepage-jshint.webp)
+### JSHint
 
-### JSHint script.js
-![JSHint script.js results](./assets/images/readme-images/scriptjs-jshint.webp)
+- I have run the site through JSHint's audit application and the results are shown below:
+![JSHint result](./readme-content/images/jshint-result.webp)
+
+
 
 
 ### Testing User Stories from User Experience (UX) Section
