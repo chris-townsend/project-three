@@ -340,30 +340,14 @@ Throughout building my JavaScript game, I had to do various console.log() tests 
 The above screenshot shows me trying to debug an error I had in the console. It was showing that I had an uncaught type error at my countDown function. I used console.log() to print the timer to ensure this was working. The error was overcome by creating a new JavaScript file to prevent the timer being called on the homepage.
 
 -   The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge.
-
--   The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 5t, iPhone SE, iPhone 6-8, iPhone X & Samsung Galaxy S21.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and point out any bugs or problems.
+-   A large amount of testing was done to ensure that everything was linking correctly.
+-   Friends and family members were asked to review the game and point out any bugs or problems.
 
 ### Known Bugs
 #
 Throughout the project I encountered a number of bugs, some of which were solved and some not which are stated below:
 
 #### Console Bugs
-I had an uncaught ReferenceError for my instructionBtn in the console. *resolved* This was resolved by making a separate JavaScript file for each of my HTML pages to prevent conflicting code. 
-![Uncaught ReferenceError](./assets/images/readme-images/console-uncaught-reference-error.webp)
-
-![Uncaught TypeError](./assets/images/readme-images/console-error.webp)
-
-I had a similar error coming up on my homepage with an uncaught TypeError, my homepage was looking for the textContent at countDown which it wasn't able to find because it's on my game page. Various bits of code was added/ removed to try to fix this issue, at first I fixed the problem in the console but later found out it had stopped my count down timer on my game page from working. 
-
-![Console Error fix](./assets/images/readme-images/console-error-fix.webp)
-![Console temporary fix](./assets/images/readme-images/console-temporary-fix.webp)
-
-The above piece of code was suggested by a Code Institute tutor, at first it fixed the console.log errors but it stopped my count down timer from working on my game page. I managed to fix this error but then it came up with another similar uncaught TypeError for my music buttons. I realised at this point it was from conflicting code on other pages, I *resolved* this issue by creating a game.js page.
-
-There was a couple of warnings stating that the type attribute was unnecessary for JavaScript resources, these attributes were removed and errors removed as well. 
-![W3C HTML validator warning](./assets/images/readme-images/html-validator-warning.webp)
 
 
 ***
@@ -378,7 +362,7 @@ The project was deployed to Heroku using the following steps...
 ![Heroku dashboard](./readme-content/images/heroku-dashboard.webp)
 ![Heroku drop-down menu](./readme-content/images/heroku-create-new-app.webp)
 
-2. Create a meaningful name for your app and select the correct region for your location.
+2. Create a name for your app and select the correct region for your location.
 ![Heroku create app](./readme-content/images/heroku-created-app.webp)    
 
 3. Select "Settings" from the tabs at the top of the screen.
@@ -397,20 +381,43 @@ The project was deployed to Heroku using the following steps...
 
     ![Config Vars](./readme-content/images/heroku-config-vars.webp)
 
-5. Select 'Add buildpack' from the Settings tab.
+5. Select "Add buildpack" from the Settings tab.
     ![Add buildpack](./readme-content/images/heroku-add-buildpack.webp)
 
-6. From the list of buildpacks, Add 'Python' and 'Nodejs' and click save changes.
+6. From the list of buildpacks, Add "Python" and "Nodejs" and click save changes.
 ![Select buildpack](./readme-content/images/heroku-python-buildpack.webp)
 
  - Python must be the first buildpack, followed by Nodejs. The buildpacks can be dragged into position.
 ![Correct buildpack List](./readme-content/images/heroku-buildpack-config.webp)
 
-7. Select 'Deploy' from the tabs section at the top of the page.
+7. Select "Deploy" from the tabs section at the top of the page.
 ![Deploy from Tabs](./readme-content/images/heroku-deploy-tabs.webp)
 
- - Select 'Connect to GitHub' from deployment method. 
+ - Select "Connect to GitHub" from deployment method. 
  ![Connect to GitHub](./readme-content/images/heroku-deployment-method.webp)
+
+ - Search for the repository to connect to by name.
+ ![Search for repository](./readme-content/images/heroku-search-for-repo.webp)
+
+ - Click "Connect".
+ ![Click connect](./readme-content/images/heroku-click-connect.webp)
+
+ - Your app should now be connected to your GitHub account.
+ ![Connected App](./readme-content/images/heroku-app-connected.webp)
+
+8. Select "Enable Automatic Deploys" for automatic deployments.
+ ![Automatic deploys](./readme-content/images/heroku-automatic-deploys.webp)
+
+ - If you would like to deploy manually, select "Deploy Branch". If you manually deploy, you will need to re-deploy each time the repository is updated.
+ ![Manual deploys](./readme-content/images/heroku-manual-deploy.webp)
+
+ - For the first time deploying to Heroku you may have to deploy manually but if you select automatic deploys it will update from then onwards.
+
+ - Click "View" to view the deployed site.
+
+ ![App deployed](./readme-content/images/heroku-app-deployed.webp)
+
+
 
 ### Forking the GitHub Repository
 #
@@ -419,25 +426,25 @@ By forking the GitHub Repository you can make a copy of the original repository 
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
 
-![GitHub Repository](./assets/images/readme-images/locate-github-repositorie.webp)
+![GitHub Repository](./readme-content/images/github-locate-repository.webp)
 
 2. At the top of the Repository, just above the "Settings" Button on the menu, locate the "Fork" Button and you should now have a copy of the original repository in your account.
 
-![GitHub Fork](./assets/images/readme-images/github-fork.webp)
+![GitHub Fork](./readme-content/images/github-fork.webp)
 
 ### Making a Local Clone
 #
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-![GitHub Repository](./assets/images/readme-images/locate-github-repositorie.webp)
+![GitHub Repository](./readme-content/images/github-locate-repository.webp)
 
 2. On the repository main page, click the drop down menu called Code.
 
-    ![GitHub Code Drowndown menu](./assets/images/readme-images/github-clone.webp)
+    ![GitHub Code Drowndown menu](./readme-content/images/github-clone.webp)
 
 3. To clone the repository using HTTPS, copy the link.
 
-    ![GitHub copy URL](./assets/images/readme-images/github-copy-url.webp)
+    ![GitHub copy URL](./readme-content/images/github-copy-url.webp)
 
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
@@ -470,15 +477,7 @@ Various resources used to learn were:
 #
 The Images used on my site have been taken from: 
 
--  [Clip Art Max](https://www.clipartmax.com/)
 
--  [Pin Clip Art](https://www.pinclipart.com/)
-
-- [Vecteezy](https://www.vecteezy.com/)
-
-The Sounds used on my site have been taken from:
-
--  [Free Sounds](https://freesound.org/)
 
 
 ### Acknowledgements
@@ -488,5 +487,3 @@ The Sounds used on my site have been taken from:
 -  [JavaScript 30 Day Coding Challenge](https://javascript30.com/)
 
 -  I would like to thank my Mentor Darío Carrasquel for guidance throughout the project.
-
--  Fatima, Rebecca and Sean at tutor support at Code Institute for their support and helpful ideas. 
