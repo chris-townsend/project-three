@@ -78,7 +78,8 @@ def menu():
                   "\n"
                   "5.You have 8 lives to guess the correct word.\n"
                   "  Good Luck!\n")
-            enter_input = input("Press Enter to go back to the menu\n").upper()
+            enter_input = input(CYAN + "Press Enter to go back to the menu"
+                                "\n").upper()
             if enter_input == "":
                 os.system("clear")
                 header()
