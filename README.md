@@ -110,41 +110,31 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 ![Wrong Input - Menu](./readme-content/images/invalid-key-menu.webp)
 
-3. <b>Instructions -</b> A user can view the rules and how to play hangman by clicking on "I" on the menu screen. 
+
+3. <b>Instructions -</b> A user can view the rules and how to play hangman by clicking on "I" on the menu screen.
+
+![I - Instructions](./readme-content/images/i-instructions.webp)
+![Instructions](./readme-content/images/instructions-page.webp)
+
+- The computer will ask for the Enter key to return back to the menu, if an incorrect key has been pressed, an alert in red will alert the user and the menu will be presented, P to play or I for Instructions. 
+
+![Invalid Return key](./readme-content/images/invalid-key-instructions.webp)
+
+
+4. <b>Generate a random word -</b> A random word is selected from a list of choosen words from words.py. This is been accomplished by importing the built-in *random* module. The module has a range of methods but the one used to retrieve the random word is random.choice taken from WORDS in words.py.  
+
+![List of random words](./readme-content/images/word-random-choice.webp)
+
+- The list of words from words.py contains 300 words, which have been selected at random from [Random Lists](https://www.randomlists.com/random-words?dup=false&qty=300).
+
+5. <b>Getting User Input -</b> After clicking P for Play, the user will be presented with the hidden word, lives remaining and the hangman diagram. The hidden letters within the word are presented by a '_' . The players input is either registered as getting a letter or word correct or incorrect. 
 
 
 
-![Instructions](./assets/images/readme-images/instruction-modal.webp)
-
-6. 
-
-![Social Icons hover Effect](./assets/images/readme-images/hover-social-icon.webp)
-
-7. 
-
-![Footer music buttons](./assets/images/readme-images/footer-music-button.webp)
-![Footer Button css Code ](./assets/images/readme-images/footer-cursor-pointer.webp)
 
 
-8. 
-![Mallet Cursor](./assets/images/readme-images/mallet-cursor.webp)
-
-9. 
-
-![Time Left display](./assets/images/readme-images/time-left.webp)
-![Game over alert](./assets/images/readme-images/game-over-alert.webp)
-
-10. 
-![Score board](./assets/images/readme-images/score-board.webp)
-
-11. 
-
-12. 
-
-![Favicon Logo](./assets/images/readme-images/favicon-icon.webp)
 
 
-13. 
 ***
 ## Future Features
 #

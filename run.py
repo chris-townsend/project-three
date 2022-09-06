@@ -134,6 +134,7 @@ def display():
     os.system("clear")
     header()
     print(hangman[8-LIVES])
+    print("\n")
     print(' '.join([str(e) for e in REVEAL]))
     print(f"You have {LIVES} lives")
 
