@@ -164,7 +164,7 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
  - If a user decides they no longer want to play they can return back to the menu by clicking 'N' to the play again option.
 
- 
+ ![Return to Menu](./readme-content/images/return-to-menu.webp)
 
 
 
