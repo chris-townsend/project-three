@@ -127,7 +127,21 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 - The list of words from words.py contains 300 words, which have been selected at random from [Random Lists](https://www.randomlists.com/random-words?dup=false&qty=300).
 
-5. <b>Getting User Input -</b> After clicking P for Play, the user will be presented with the hidden word, lives remaining and the hangman diagram. The hidden letters within the word are presented by a '_' . The players input is either registered as getting a letter or word correct or incorrect. 
+5. <b>Getting User Input -</b> After clicking P for Play, the user will be presented with the hidden word, lives remaining and the hangman diagram. The hidden letters within the word are presented by a '_' . The players input is registered as either getting a letter or word correct or incorrect. In the below screenshot you can see that the word has 5 letters.
+
+![Input letter](./readme-content/images/game-screen.webp)
+
+- Getting an input correct will result in a letter being shown to replace '_' within the word.
+
+![Correct Input](./readme-content/images/correct-letter.webp)
+
+
+- Getting an input incorrect will result in a live being lost and the hangman diagram gets a part added with each live lost. 
+
+![Incorrect Input](./readme-content/images/incorrect-letter.webp)
+
+- When only 1 live is remaining the user will be alerted by the hangman and lives left being printed in red.
+![One live remaining](./readme-content/images/one-live-remaining.webp)
 
 
 
