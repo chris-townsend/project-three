@@ -64,8 +64,8 @@ def menu():
             header()
             print(YELLOW +
                   "1.The computer will generate a random word and it's\n"
-                  "your task to guess the letters from the word. If your\n "
-                  "feeling confident, guess the whole word!\n"
+                  "  your task to guess the letters from the word. If your\n "
+                  "  feeling confident, guess the whole word!\n"
                   "\n"
                   "2.To guess, type a letter or word of your choice and hit "
                   "enter.\n"
@@ -77,7 +77,7 @@ def menu():
                   " the Hangman will start to appear.\n"
                   "\n"
                   "5.You have 8 lives to guess the correct word.\n"
-                  "Good Luck!\n")
+                  "  Good Luck!\n")
             enter_input = input("Press Enter to go back to the menu\n").upper()
             if enter_input == "":
                 os.system("clear")
