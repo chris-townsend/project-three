@@ -106,8 +106,11 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 ![Welcome user + Menu Option](./readme-content/images/welcome-user-menu.webp)
 
-- The computer will only accept the valid keys or else an error message will appear:
+- The computer will only accept the valid keys or else an error message will appear. The error message prints in red to show an error or wrong input has happened.
 
+![Wrong Input - Menu](./readme-content/images/invalid-key-menu.webp)
+
+3. <b>Instructions -</b> A user can view the rules and how to play hangman by clicking on "I" on the menu screen. 
 
 
 

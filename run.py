@@ -64,11 +64,14 @@ def menu():
             header()
             print(YELLOW +
                   "1.The computer will generate a random word and it's\n"
-                  "your task to guess the letters from the word.\n"
+                  "your task to guess the letters from the word. If your "
+                  "feeling confident, guess the whole word!\n"
                   "\n"
-                  "2.To guess, type a letter of your choice and hit enter.\n"
+                  "2.To guess, type a letter or word of your choice and hit "
+                  "enter.\n"
                   "\n"
-                  "3.If you guess correctly, the letter will be revealed.\n"
+                  "3.If you guess correctly, the letter or word will be "
+                  "revealed.\n"
                   "\n"
                   "4.If you guess incorrectly, you will lose a life and \n"
                   " the Hangman will start to appear.\n"
