@@ -143,6 +143,25 @@ The game will be designed for a target audience of 12 years + as some of the wor
 - When only 1 live is remaining the user will be alerted by the hangman and lives left being printed in red.
 ![One live remaining](./readme-content/images/one-live-remaining.webp)
 
+6. <b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online Ascii Art generator.
+
+ - For when a game is Won, 'You Win' is displayed.
+ ![Game Won](./readme-content/images/you-win.webp)
+ 
+ - Below the You Win Diagram I have used an F-string to print the correct word and the amount of lives remaining after guessing the correct word.
+
+ ![Game Won with Lives Left](./readme-content/images/you-win-two.webp)
+
+ - For when a game is Lost, 'Game Over' is displayed. I have used an F-string to print the correct word so that the user know's what missing letters they needed.
+
+ ![Game Over](./readme-content/images/game-over.webp)
+
+7. <b>Restart Game -</b> At the end of gameplay, the user has the choice to either restart the game or return back to the menu.
+ ![Play again](./readme-content/images/play-again.webp)
+ - Only correct keys are accepted or an error message pops up alerting the user
+
+
+
 
 
 

@@ -115,10 +115,10 @@ def restart_game():
                 menu()
                 return True
             else:
-                raise ValueError("You must type in Y or N")
+                raise ValueError(RED + "You must type in Y or N")
 
         except ValueError:
-            print("\n You must type in Y or N Please try again.\n")
+            print(RED + "\n You must type in Y or N Please try again.\n")
 
 
 header()
