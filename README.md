@@ -442,30 +442,23 @@ By forking the GitHub Repository you can make a copy of the original repository 
 #
 Helpful tutorials I used to help me with coding some of the design ideas were:
 
-- [Ania Kubów Whac-a-mole in JavaScript](https://www.youtube.com/watch?v=rJU3tHLgb_c&t=1194s)
+- [How To Code Hangman In Python - Tutorial For Beginners](https://www.youtube.com/watch?v=pFvSb7cb_Us)
 
-- [JavaScript Game Tutorial for Beginners](https://www.youtube.com/watch?v=RTb8icFiSfk&list=RDCMUCEqc149iR-ALYkGM6TG-7vQ&index=16)
+- [Sanjin Dedic - Python Hangman Beginner to Advanced](https://www.youtube.com/watch?v=3_CX0aD9Fdg)
 
-- [How to create an animated cursor - help from webanimation](https://webanimation.blog/blog/how-to-create-a-custom-cursor-without-using-canvas)
+- [Python Hangman Game Tutorial for Beginners](https://www.youtube.com/watch?v=lJ7RhvNvsnc)
 
-- [Send Email using JavaScript](https://www.youtube.com/watch?v=x7Ewtay0Q78)
 
 Various resources used to learn were:
 - [W3Schools](https://www.w3schools.com/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Codecademy](https://www.codecademy.com/)
 
-### Media
-#
-The Images used on my site have been taken from: 
-
-
-
 
 ### Acknowledgements
 #
--  [W3 Schools How to create a modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+-  [How do I print colored text to the terminal? Stack overflow](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
 
--  [JavaScript 30 Day Coding Challenge](https://javascript30.com/)
+-  [12 Beginner Python Projects - freeCodeCamp](https://www.youtube.com/watch?v=8ext9G7xspg)
 
 -  I would like to thank my Mentor Darío Carrasquel for guidance throughout the project.
