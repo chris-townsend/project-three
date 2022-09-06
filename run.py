@@ -112,6 +112,7 @@ def restart_game():
                 os.system("clear")
                 header()
                 print(hangman[8-LIVES])
+                print("\n")
                 menu()
                 return True
             else:

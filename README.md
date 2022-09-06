@@ -158,7 +158,13 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 7. <b>Restart Game -</b> At the end of gameplay, the user has the choice to either restart the game or return back to the menu.
  ![Play again](./readme-content/images/play-again.webp)
- - Only correct keys are accepted or an error message pops up alerting the user
+ - Only correct keys are accepted otherwise a ValueError message pops up alerting the user.
+
+ ![Restart game ValueError](./readme-content/images/game-restart-value-error.webp)
+
+ - If a user decides they no longer want to play they can return back to the menu by clicking 'N' to the play again option.
+
+ 
 
 
 
