@@ -64,7 +64,7 @@ def menu():
             header()
             print(YELLOW +
                   "1.The computer will generate a random word and it's\n"
-                  "your task to guess the letters from the word. If your "
+                  "your task to guess the letters from the word. If your\n "
                   "feeling confident, guess the whole word!\n"
                   "\n"
                   "2.To guess, type a letter or word of your choice and hit "
