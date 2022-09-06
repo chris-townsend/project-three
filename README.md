@@ -195,24 +195,19 @@ With more time, I would have liked to of implemented the following ideas:
 ### Languages Used
 #
 
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 
 ### Programs, Frameworks & Libraries Used
 #
 
 - [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the wireframes during the design process.
 
+- [Diagrams.net:](https://www.diagrams.net/) Diagrams.net is an open source technology stack for building diagramming applications, It was very useful for created my flow charts when planning the logic for my project.
+
 - [Pixlr:](https://pixlr.com/x/) Pixlr was used to resize and change the format of my images.
-
-- [Coolors:](https://coolors.co/) Coolors was used to pick a colour scheme and check contrast. 
-
-- [TinyPNG:](https://tinypng.com/) All images within the project have been processed through their free compression tool.
-
-- [Google Fonts:](https://fonts.google.com/) Google fonts were used to import the 'Montserrat Alternates' font into the style.css file.
-
-- [Font Awesome:](https://fontawesome.com/) Font Awesome was used throughout the website to add icons for aesthetic and UX purposes.
 
 - [Google DevTools:](https://developer.chrome.com/docs/devtools/) Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
 
@@ -220,19 +215,25 @@ With more time, I would have liked to of implemented the following ideas:
 
 - [GitHub:](https://github.com/) GitHub is used to store the projects code after being pushed from Git.
 
+- [Heroku:](http://heroku.com/) Heroku is a cloud platform that lets people build, deliver, monitor and scale apps. It supports several programming languages. Heroku was used for the deployment of this project.
+
 - [W3C Markup Validator:](https://validator.w3.org/) This site was used to ensure that my HTML and CSS was error free. I had to push my code to ensure it was updated and then add the URL of the website to the address bar which then checked for errors or warnings.
 
 - [Favicon Generator:](https://favicon.io/favicon-converter/) This was used to create my favicon icon. 
 
- - [Slack:](https://slack.com/intl/en-gb/) Slack is a online messaging service which allows people to collaborate with their workspaces. Slack was incredibly useful for advice from students and tutors.
+- [Slack:](https://slack.com/intl/en-gb/) Slack is a online messaging service which allows people to collaborate with their workspaces. Slack was incredibly useful for advice from students and tutors.
 
- - [YouTube:](https://www.youtube.com/) YouTube is a free video sharing website, it has been very useful for watching videos on basic JavaScript functions and games.
+- [YouTube:](https://www.youtube.com/) YouTube is a free video sharing website, it has been very useful for watching videos on python functions.
 
- - [Audio Compressor:](https://www.media.io/audio-compressor.html) Media.io was used to compress my audio files without loosing quality. 
+- [JSHint Validator:](https://jshint.com/) Jshint was used to validate my JavaScript code. It showed any warnings and errors within my code. 
 
- - [Compressor.io:](https://compressor.io/) This was used to reduce the size and load times of my images. 
+- [Ascii Art generator:](https://www.ascii-art-generator.org/) This art generator was used to create my diagrams in my diagrams.py folder. It has an option to select the max line width which was really handy as there is a max width of 80 characters long in the terminal.
 
- - [JSHint Validator:](https://jshint.com/) Jshint was used to validate my JavaScript code. It showed any warnings and errors within my code. 
+- [PEP8 Validator:](http://pep8online.com/) The PEP8 validator was used to validate my python code, you can paste your code or upload the file to see the results. Its built with a backend Python framework called Flask. 
+
+- [Random Lists:](https://www.randomlists.com/random-words?dup=false&qty=300) A list of 300 random  words in words.py. You can choose the dataset and the quantity of words you require. 
+
+
 
 ## Testing
 #
@@ -247,9 +248,9 @@ I have performed multiple tests manually through-out the development of the proj
 #### words.py
 ![PEP8 words.py result](./readme-content/images/pep8-result-words.py.webp)
 #### hangman.py
-![PEP8 hangman.py result]()
+![PEP8 hangman.py result](./readme-content/images/pep8-result-hangman.py.webp)
 #### diagrams.py
-![PEP8 hangman.py result]()
+![PEP8 hangman.py result](./readme-content/images/pep8-result-diagrams.py.webp)
 
 
 
