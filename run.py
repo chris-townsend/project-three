@@ -85,7 +85,7 @@ def menu():
             else:
                 print(RED + "Oops look's like you pressed the wrong key!\n")
         else:
-            print("Invalid Character, please try again!\n")
+            print(RED + "Invalid Character, please try again!\n")
 
 
 def restart_game():

@@ -97,10 +97,17 @@ The game will be designed for a target audience of 12 years + as some of the wor
 1. <b> Getting User Input -</b> On start up, the game will ask the user to input a name. This has been accomplished by using the python input() function. The prompt within the input is a string which represents a default message to the user.
  
 ![Please Enter Your Name](./readme-content/images/please-enter-name.webp)
- - If a user inputs any characters other than letters, a default error message will 
+ - If a user inputs any characters other than letters, a default error message will appear. isalpha() was used to accomplish this, as you can see from the screen shot below, no special characters, numbers or spaces are accepted. I have used the colour Red to print Errors to the user.
+ ![Invalid name option](./readme-content/images/invalid-name-input.webp)
 
-4.
-![Contact form requirements](./assets/images/readme-images/required-form-modal.webp)
+2. <b>Game Menu -</b> When a correct name has been inputted, the user will be greeted with a welcome message followed by a menu with two options. 
+- Press P to play the game
+- Press I for Instructions 
+
+![Welcome user + Menu Option](./readme-content/images/welcome-user-menu.webp)
+
+- The computer will only accept the valid keys or else an error message will appear:
+
 
 
 
