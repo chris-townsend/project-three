@@ -157,6 +157,7 @@ The game will be designed for a target audience of 12 years + as some of the wor
  ![Game Over](./readme-content/images/game-over.webp)
 
 7. <b>Restart Game -</b> At the end of gameplay, the user has the choice to either restart the game or return back to the menu.
+
  ![Play again](./readme-content/images/play-again.webp)
  - Only correct keys are accepted otherwise a ValueError message pops up alerting the user.
 
@@ -280,49 +281,36 @@ I have performed multiple tests manually through-out the development of the proj
 #
  1. As a first time user, I want to easily understand how to play the game.
 
-**Simple and informative text on the homepage buttons which allows the user to click on the Instructions button and read up on how to play the game.**
+**Simple and informative text on the menu screen where the user can click 'I' which opens the Instructions page. The Instructions are designed to be easy to read and easy to navigate to after game play.**
 
-![Home Buttons](./assets/images/readme-images/home-buttons-contact.webp)
-
-
- 2. As a user I want the ability to control any background sounds playing. 
-
- **At the bottom of the homepage is an option to switch the audio on/off and Pause. When you click play the button switches to Pause and when clicked again, returns to Play**
-
- ![Music Buttons](./assets/images/readme-images/footer-music-button.webp)
-
- 3. As a user I want to be able to see my current score.
-
- **The scoreboard can easily be seen during game play at the top of the screen, alongside the time remaining.**
-
- ![Scoreboard](./assets/images/readme-images/score-board.webp)
-
- 4. As a user I want to receive an alert at the end of gameplay with my final score.
-
- **A pop up message alerts the user at the end of gameplay to let the user know that the game is over and gives them a final score.**
-
- ![Game over Popup](./assets/images/readme-images/game-over-alert-close-up.webp)
-
- 5. As a user I want simple gameplay which is easy to play again.
-
- **The game will restart after clicking ok to the alert after game play. The user has the choice to play again or click the home button to return to the home screen.**
-
-![Ok Game Alert](./assets/images/readme-images/ok-game-over-alert.webp)
- ![Home button](./assets/images/readme-images/gamepage-home-icon.webp)
+![Menu](./readme-content/images/i-instructions.webp)
+![Instructions](./readme-content/images/instructions-page.webp)
 
 
- 6. As a frequent user, I want to learn more about the developer and see if they have added any new content. 
+ 2. As a user I want to be able to see my current score.
 
- **At the bottom of each pop up modal for Contact and Instructions are two social media icons, LinkedIn and Github, there is an effect of hover of the buttons to register interactivity with the user.**
+ **You can see your current score as lives remaining, you start with 8 lives and if you get a letter wrong you lose a life and the hangman starts to grow.**
 
-![Social Icons on 414px wide](./assets/images/readme-images/social-icons-414px.webp)
- 
+ ![Lives Remaining](./readme-content/images/one-live-remaining.webp)
 
- 7. As a user I want the ability to play the game on multiple devices.
+ 3. As a user I want to receive an alert at the end of gameplay with my final score.
 
- **The game has been tested on mutiple devices and tested using responsinator and google dev tools to add specific media queries for certain screen sizes.**
+ **At the end of gameplay the computer alerts the user with how many lives are left if a word gets completed. Otherwise if a word is not completed within 8 attempts, gameplay is over and game over is displayed.**
 
- ![Responsinator](./assets/images/readme-images/responsiveness.webp)
+ ![Final Score](./readme-content/images/final-score.webp)
+
+ 4. As a user I want simple gameplay which is easy to play again.
+
+ **The game is easy to play again by simply pressing the 'Y' key at the options menu after game play. The user has the choice to play again or 'N' to return to the menu screen.**
+
+![Play again](./readme-content/images/play-again.webp)
+
+
+ 5. As a returning user, If I play again, I want different words to guess
+
+ **There are 300 words available which are choosen at random from words.py**
+
+![List of words](./readme-content/images/words.webp)
 
  
 ### Further Testing
