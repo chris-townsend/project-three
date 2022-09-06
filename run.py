@@ -33,8 +33,9 @@ def ask_for_name():
     while True:
         name = input(YELLOW + "Please Enter Your Name:\n")
         if not name.isalpha():
-            print("Name must be letters only\n")
-        else:
+            print(RED + "Name must be letters only\n")
+            return ask_for_name()
+        if name.isalpha():
             os.system("clear")
             header()
             print(hangman[8-LIVES])
