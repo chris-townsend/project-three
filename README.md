@@ -303,11 +303,11 @@ I have performed multiple tests manually through-out the development of the proj
  
 ### Further Testing
 #
-Throughout building my JavaScript game, I had to do various console.log() tests to ensure my functions and variables were working and linking up correctly. I used the console option within google dev tools to validate the code was working correctly. Below are some screenshots of some tests taken while figuring out some errors within the console.
+Throughout building my Python project, I had to do various tests to ensure my functions and variables were working and linking up correctly. Below are some screenshots of some tests carried out.
 
-![Console error](./assets/images/readme-images/console-log-timer.webp)
+![Test random_word function](./readme-content/images/test-random-word.webp)
 
-The above screenshot shows me trying to debug an error I had in the console. It was showing that I had an uncaught type error at my countDown function. I used console.log() to print the timer to ensure this was working. The error was overcome by creating a new JavaScript file to prevent the timer being called on the homepage.
+The above screenshot shows me testing if a new random word will appear after the next one. I have used a print statement to check this. The words are randomly selected from words.py and the random module has been added at the top of the run.py file. In the end, I didn't end up using this randomword function but it allowed me to test weather the random word is being generated correctly. 
 
 -   The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge.
 -   A large amount of testing was done to ensure that everything was linking correctly.
