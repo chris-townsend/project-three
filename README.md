@@ -317,8 +317,12 @@ The above screenshot shows me testing if a new random word will appear after the
 #
 Throughout the project I encountered a number of bugs, some of which were solved and some not which are stated below:
 
-#### Console Bugs
+![Invalid Escape Sequence](./readme-content/images/invalid-escape-sequence.webp)
 
+![Check Letter Error](./readme-content/images/check-letter-error.webp)
+![Global error](./readme-content/images/global-error.webp)
+
+![Consider Using Enumerate](./readme-content/images/consider-enumerate.webp)
 
 ***
 ## Deployment
