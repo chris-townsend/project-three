@@ -174,22 +174,16 @@ The game will be designed for a target audience of 12 years + as some of the wor
 #
 With more time, I would have liked to of implemented the following ideas:
 
-- Display a highscores list by using a Google sheet API 
+- <b>Scoring System -</b> Display a highscores list by using a Google sheet to store the data.
 
-![Highscore button](./assets/images/readme-images/font-home-button.webp)
+- <b>Catagories for word with a hint -</b> Turn words.py into a dictionary with different catagaories for words. Give the user a hint at the start of gameplay hinting what catagorie the word is in. 
 
-- Add objects to increase the difficulty - Add an object such as a rabbit and if that object is hit you minus one point. 
-
-- Add a different mole image to show when a mole has been hit, in case the sound effects don't work on a particular device.
-
+- <b>Add difficulty option -</b> Change the game logic so that at the menu screen the user has the choice of Easy, Medium and hard. On an easy setting, the user could have 12 lives wheras on the hard setting, the user could have 4 lives. 
 
 ### Languages Used
 #
 
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
 
 ### Programs, Frameworks & Libraries Used
 #
