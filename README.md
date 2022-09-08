@@ -30,13 +30,12 @@
     - [Testing Stories for UX](#testing-user-stories-from-user-experience-ux-section)
     - [Further Testing](#further-testing)
 - [Bugs](#known-bugs)
-- [Deployment](#Deployment)
-    - [GitHub Pages](#GitHub-Pages)
+- [Deployment](#deployment)
+    - [Heroku](#heroku)
     - [Forking the GitHub Repository](#forking-the-github-repository)
     - [Making a local Clone](#making-a-local-clone)
-- [Credits](#Credits)
-    - [Content](#Content)
-    - [Media](#Media)
+- [Credits](#credits)
+    - [Content](#content)
     - [Acknowledgements](#acknowledgements)
 
 ***
