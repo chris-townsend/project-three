@@ -70,6 +70,8 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 -   ### Design
 #
+![Hangman wireframe](./readme-content/images/hangman-wireframe.webp)
+
 -   #### Colour Scheme
     
  The colour scheme for this project relies heavily on the colours available through a system call called OS which is built-in within Python. The package has allowed a few colours to be applied to text within the terminal. The colours outside the terminal have been designed to match the style of the game. The 'Run Program' button has the original style with added style to the scroll bar to make it blend in with the terminal screen. Contrast checks have been done to ensure the 'Run Program' button and text present are of a high enough contrast to be easily read.
