@@ -170,6 +170,8 @@ while GAME_WON is False and LIVES > 0:
         reveal = word
     elif len(guess) == 1 and guess in word:
         GAME_WON = check_letter(guess, word)
+    elif not guess.isalpha():
+        print(RED + "Guess must be letters only\n")
     else:
         LIVES -= 1
     if GAME_WON:

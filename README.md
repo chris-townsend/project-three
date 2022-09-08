@@ -169,20 +169,12 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
  ![Return to Menu](./readme-content/images/return-to-menu.webp)
 
-
-
-
-
-
-
-
-
 ***
 ## Future Features
 #
 With more time, I would have liked to of implemented the following ideas:
 
-- Display a high scores list linked to local storage - At first I had my contact modal set up as a high score list but changed it to a contact form due to not having enough information about JSON.stringify and local storage. Below is an image of the original high scores button. 
+- Display a highscores list by using a Google sheet API 
 
 ![Highscore button](./assets/images/readme-images/font-home-button.webp)
 
