@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio Project Three - Python</h1>
+<h1 align="center">Portfolio Project Three - Chris's Hangman Using Python</h1>
 
 ## Live Site
 [Chris's Hangman](https://chris-hangman.herokuapp.com/)
@@ -146,11 +146,12 @@ The game will be designed for a target audience of 12 years + as some of the wor
 ![One live remaining](./readme-content/images/one-live-remaining.webp)
 
 - A user can only input letters while playing the game and no lives will be lost if a number or special character is entered by mistake. An error message briefly alerts the user 'Guess must be letters only'. You can only see this message very briefly because of the way I have the display() function called in the game logic. The screen gets cleared when a letter or word is input.
+
 ![Letters only](./readme-content/images/incorrect-guess-message.webp)
 
 - A user can also guess whole words if they think they know the word, this prevents having to type in each individual letter.
 
-6. <b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online Ascii Art generator.
+6. <b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online [Ascii Art generator](https://www.ascii-art-generator.org/).
 
  - For when a game is Won, 'You Win' is displayed.
  ![Game Won](./readme-content/images/you-win.webp)
@@ -213,8 +214,6 @@ With more time, I would have liked to of implemented the following ideas:
 
 - [Slack:](https://slack.com/intl/en-gb/) Slack is a online messaging service which allows people to collaborate with their workspaces. Slack was incredibly useful for advice from students and tutors.
 
-- [YouTube:](https://www.youtube.com/) YouTube is a free video sharing website, it has been very useful for watching videos on python functions.
-
 - [JSHint Validator:](https://jshint.com/) Jshint was used to validate my JavaScript code. It showed any warnings and errors within my code. 
 
 - [Ascii Art generator:](https://www.ascii-art-generator.org/) This art generator was used to create my diagrams in my diagrams.py folder. It has an option to select the max line width which was really handy as there is a max width of 80 characters long in the terminal.
@@ -247,7 +246,7 @@ I have performed multiple tests manually through-out the development of the proj
 
 
 ### W3C Validator
-- The W3C HTML & CSS Validator was used to validate the project, the results are shown below with no errors.
+The W3C HTML & CSS Validator was used to validate the project, the results are shown below with no errors reported.
 
 #### [HTML Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchris-hangman.herokuapp.com%2F)
 ![W3C HTML Validator Index page](./readme-content/images/w3c-html-result.webp)
@@ -257,17 +256,17 @@ I have performed multiple tests manually through-out the development of the proj
 
 ### Google Lighthouse 
 
-- I have run the site through Google Chrome's Lighthouse audit application and the results are shown below:
+I have run the site through Google Chrome's Lighthouse audit application and the results are shown below:
 
 ![Lighthouse result](./readme-content/images/lighthouse-result.webp)
 
 
 ### JSHint
 
-- I have run the site through JSHint's audit application and the results are shown below:
+I have used JSHint's linter to check index.js and the results are shown below:
 ![JSHint result](./readme-content/images/jshint-result.webp)
 
-
+The undefined variables and unused variable are related to the terminal supplied by Code Institute. As the code is not my own, I have left it as it is.
 
 
 ### Testing User Stories from User Experience (UX) Section
@@ -308,11 +307,11 @@ I have performed multiple tests manually through-out the development of the proj
  
 ### Further Testing
 #
-Throughout building my Python project, I had to do various tests to ensure my functions and variables were working and linking up correctly. Below are some screenshots of some tests carried out.
+Throughout building my Python project, I had to do various tests to ensure my functions and variables were working and linking up correctly.
 
 ![Test random_word function](./readme-content/images/test-random-word.webp)
 
-The above screenshot shows me testing if a new random word will appear after the next one. I have used a print statement to check this. The words are randomly selected from words.py and the random module has been added at the top of the run.py file. In the end, I didn't end up using this randomword function but it allowed me to test weather the random word is being generated correctly. 
+The above screenshot shows me testing if a new random word will appear each time I print the function. I have used a print statement to check this. The words are randomly selected from words.py and the random module has been added at the top of the run.py file. In the end, I didn't end up using this randomword function but it allowed me to test weather the random word is being generated correctly. 
 
 -   The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge.
 -   A large amount of testing was done to ensure that everything was linking correctly.
