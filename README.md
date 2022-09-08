@@ -145,6 +145,11 @@ The game will be designed for a target audience of 12 years + as some of the wor
 - When only 1 live is remaining the user will be alerted by the hangman and lives left being printed in red.
 ![One live remaining](./readme-content/images/one-live-remaining.webp)
 
+- A user can only input letters while playing the game and no lives will be lost if a number or special character is entered by mistake. An error message briefly alerts the user 'Guess must be letters only'. You can only see this message very briefly because of the way I have the display() function called in the game logic. The screen gets cleared when a letter or word is input.
+![Letters only](./readme-content/images/incorrect-guess-message.webp)
+
+- A user can also guess whole words if they think they know the word, this prevents having to type in each individual letter.
+
 6. <b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online Ascii Art generator.
 
  - For when a game is Won, 'You Win' is displayed.
