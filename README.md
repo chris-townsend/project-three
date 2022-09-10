@@ -78,6 +78,32 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 ![Colour-scheme](./readme-content/images/colour-scheme.webp)
 
+I found this image while searching for how to add colour to the terminal on [Stack Overflow](https://stackoverflow.com/). It was very useful for deciding on what colours to use for my project. *note: `\33[5m` and `\33[6m` are blinking. credit to [qubodup](https://stackoverflow.com/users/188159/qubodup) for the image and great post!*
+
+
+The colours used for text through-out the game are:
+
+- `YELLOW` = `'\033[33m'`
+  - Used for Input When a user first enters their name
+  - Display for Instructions
+  - When a user wins a game
+  
+- `RED` = `'\033[0;31m'`
+  - Used for the main heading Chris's Hangman
+  - Used for Error messages when a user inputs a wrong key
+  - When a user loses a game
+  - When a user only has 1 live left print hangman and lives left
+
+- `CYAN` = `'\033[36m'`
+  - Return to menu from Instructions text
+  - Prints a line under the correct word after gameplay.
+   
+- `WHITE` = `'\033[37m'`
+  - Used to print the hangman until 1 live left
+  - Prints lives left until 1 live left
+  - User input for guessing a letter
+
+
 ***
    
         
