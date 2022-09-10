@@ -201,13 +201,15 @@ With more time, I would have liked to of implemented the following ideas:
 ### Programs, Frameworks & Libraries Used
 #
 
-- [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the wireframes during the design process.
+- [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the basic wireframe during the design process.
 
-- [Diagrams.net:](https://www.diagrams.net/) Diagrams.net is an open source technology stack for building diagramming applications, It was very useful for created my flow charts when planning the logic for my project.
+- [Diagrams.net:](https://www.diagrams.net/) Diagrams.net is an open source technology stack for building diagramming applications, It was very useful for created my flow chart when planning the logic for my project.
 
 - [Pixlr:](https://pixlr.com/x/) Pixlr was used to resize and change the format of my images.
 
 - [Google DevTools:](https://developer.chrome.com/docs/devtools/) Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
+
+- [Python Tutor:](https://pythontutor.com/) Python Tutor was used to help step through non functioning code and resolve issues.
 
 - [Git:](https://git-scm.com/) Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
@@ -219,9 +221,9 @@ With more time, I would have liked to of implemented the following ideas:
 
 - [Favicon Generator:](https://favicon.io/favicon-converter/) This was used to create my favicon icon. 
 
-- [Slack:](https://slack.com/intl/en-gb/) Slack is a online messaging service which allows people to collaborate with their workspaces. Slack was incredibly useful for advice from students and tutors.
+- [Slack:](https://slack.com/intl/en-gb/) Slack is a online messaging service which allows people to collaborate with their workspaces. Slack was useful for advice from students and tutors.
 
-- [JSHint Validator:](https://jshint.com/) Jshint was used to validate my JavaScript code. It showed any warnings and errors within my code. 
+- [JSHint Validator:](https://jshint.com/) Jshint was used to validate the JavaScript code. It shows any warnings and errors within my code. 
 
 - [Ascii Art generator:](https://www.ascii-art-generator.org/) This art generator was used to create my diagrams in my diagrams.py folder. It has an option to select the max line width which was really handy as there is a max width of 80 characters long in the terminal.
 
@@ -230,6 +232,8 @@ With more time, I would have liked to of implemented the following ideas:
 - [Random Lists:](https://www.randomlists.com/random-words?dup=false&qty=300) A list of 300 random  words in words.py. You can choose the dataset and the quantity of words you require. 
 
 - [ImgPile:](https://imgpile.com/) A free unlimited cloud image hosting website, used to host my image for my favicon.
+
+- [.random:](https://docs.python.org/3/library/random.html) The random library was used in order to randomly assign a word out of a choice of 300 words from words.py.
 
 
 ## Testing
