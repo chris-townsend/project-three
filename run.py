@@ -10,11 +10,8 @@ from hangman import hangman
 
 YELLOW = '\033[33m'
 RED = '\033[0;31m'
-BLUE = '\033[34m'
-MAGENTA = '\033[35m'
 CYAN = '\033[36m'
 WHITE = '\033[37m'
-CBLINK = '\33[5m'
 
 LIVES = 8
 GAME_WON = False
