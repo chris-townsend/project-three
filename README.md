@@ -122,13 +122,13 @@ The colours used for text through-out the game are:
 ## Features
 #
 
-1. <b> Getting User Input -</b> On start up, the game will ask the user to input a name. This has been accomplished by using the python input() function. The prompt within the input is a string which represents a default message to the user.
+<b> Getting User Input -</b> On start up, the game will ask the user to input a name. This has been accomplished by using the python input() function. The prompt within the input is a string which represents a default message to the user.
  
 ![Please Enter Your Name](./readme-content/images/please-enter-name.webp)
  - If a user inputs any characters other than letters, a default error message will appear. isalpha() was used to accomplish this, as you can see from the screen shot below, no special characters, numbers or spaces are accepted. I have used the colour Red to print Errors to the user.
  ![Invalid name option](./readme-content/images/invalid-name-input.webp)
 
-2. <b>Game Menu -</b> When a correct name has been inputted, the user will be greeted with a welcome message followed by a menu with two options. 
+<b>Game Menu -</b> When a correct name has been inputted, the user will be greeted with a welcome message followed by a menu with two options. 
 - Press P to play the game
 - Press I for Instructions 
 
@@ -139,7 +139,7 @@ The colours used for text through-out the game are:
 ![Wrong Input - Menu](./readme-content/images/invalid-key-menu.webp)
 
 
-3. <b>Instructions -</b> A user can view the rules and how to play hangman by clicking on "I" on the menu screen.
+<b>Instructions -</b> A user can view the rules and how to play hangman by clicking on "I" on the menu screen.
 
 ![I - Instructions](./readme-content/images/i-instructions.webp)
 ![Instructions](./readme-content/images/instructions-page.webp)
@@ -149,13 +149,13 @@ The colours used for text through-out the game are:
 ![Invalid Return key](./readme-content/images/invalid-key-instructions.webp)
 
 
-4. <b>Generate a random word -</b> A random word is selected from a list of choosen words from words.py. This is been accomplished by importing the built-in *random* module. The module has a range of methods but the one used to retrieve the random word is random.choice taken from WORDS in words.py.  
+<b>Generate a random word -</b> A random word is selected from a list of choosen words from words.py. This is been accomplished by importing the built-in *random* module. The module has a range of methods but the one used to retrieve the random word is random.choice taken from WORDS in words.py.  
 
 ![List of random words](./readme-content/images/word-random-choice.webp)
 
 - The list of words from words.py contains 300 words, which have been selected at random from [Random Lists](https://www.randomlists.com/random-words?dup=false&qty=300).
 
-5. <b>Getting User Input -</b> After clicking P for Play, the user will be presented with the hidden word, lives remaining and the hangman diagram. The hidden letters within the word are presented by a '_' . The players input is registered as either getting a letter or word correct or incorrect. In the below screenshot you can see that the word has 5 letters.
+<b>Getting User Input -</b> After clicking P for Play, the user will be presented with the hidden word, lives remaining and the hangman diagram. The hidden letters within the word are presented by a '_' . The players input is registered as either getting a letter or word correct or incorrect. In the below screenshot you can see that the word has 5 letters.
 
 ![Input letter](./readme-content/images/game-screen.webp)
 
@@ -177,7 +177,7 @@ The colours used for text through-out the game are:
 
 - A user can also guess whole words if they think they know the word, this prevents having to type in each individual letter.
 
-6. <b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online [Ascii Art generator](https://www.ascii-art-generator.org/).
+<b>Diagrams.py -</b> Within this folder are my main diagrams, they have been created using the online [Ascii Art generator](https://www.ascii-art-generator.org/).
 
  - For when a game is Won, 'You Win' is displayed.
  ![Game Won](./readme-content/images/you-win.webp)
@@ -190,7 +190,7 @@ The colours used for text through-out the game are:
 
  ![Game Over](./readme-content/images/game-over.webp)
 
-7. <b>Restart Game -</b> At the end of gameplay, the user has the choice to either restart the game or return back to the menu.
+<b>Restart Game -</b> At the end of gameplay, the user has the choice to either restart the game or return back to the menu.
 
  ![Play again](./readme-content/images/play-again.webp)
  - Only correct keys are accepted otherwise a ValueError message pops up alerting the user.
@@ -361,9 +361,16 @@ Throughout the project I encountered a number of bugs, some of which were solved
 
 ![Invalid Escape Sequence](./readme-content/images/invalid-escape-sequence.webp)
 
+While building my diagrams, I had numerous errors stating invalid escape sequences, This was easily resolved by adding in an extra `\` or `/` where necessary.
+
+
 ![Check Letter Error](./readme-content/images/check-letter-error.webp)
+
+I had a couple of errors with my check_letter function and Python tutor was handy in resolving this. At first I had `reveal` as a global but after doing some more research I found out that this was not needed in my code. 
+
 ![Global error](./readme-content/images/global-error.webp)
 
+I was also given a warning about iterating with range and len so I decided to use the enumerate method instead.
 ![Consider Using Enumerate](./readme-content/images/consider-enumerate.webp)
 
 ***
