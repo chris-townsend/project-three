@@ -16,6 +16,7 @@
 - [Brief & Target Audience](#brief)
 - [User Experience(UX)](#user-experience-ux)
 - [Design](#design)
+    - [Wireframes](#wireframes)
     - [Colour Scheme](#colour-scheme)
 - [Logic & Flow](#logic--flow)
 - [Features](#features)
@@ -70,6 +71,10 @@ The game will be designed for a target audience of 12 years + as some of the wor
 
 -   ### Design
 #
+
+-   #### Wireframes
+Due to the style of the project, the wireframe has been kept basic. Some added styles might of changed since initially creating the wireframe. 
+
 ![Hangman wireframe](./readme-content/images/hangman-wireframe.webp)
 
 -   #### Colour Scheme
@@ -109,7 +114,7 @@ The colours used for text through-out the game are:
         
 *   ### Logic & Flow
 # 
-- During the planning phase of this project I spent some time planning the logic behind the application. I created a flow chart which allowed me to follow the application as the project was being built. The chart has been made using [Diagrams.net](https://www.diagrams.net/) 
+- During the planning phase of this project I spent some time planning the logic behind the application. I created a flow chart which allowed me to follow the application as the project was being built. The chart has been made using [Diagrams.net](https://www.diagrams.net/).
 
 
 ![Logic Flow Chart](./readme-content/images/hangman-flowchart.webp)
@@ -126,6 +131,7 @@ The colours used for text through-out the game are:
  
 ![Please Enter Your Name](./readme-content/images/please-enter-name.webp)
  - If a user inputs any characters other than letters, a default error message will appear. isalpha() was used to accomplish this, as you can see from the screen shot below, no special characters, numbers or spaces are accepted. I have used the colour Red to print Errors to the user.
+
  ![Invalid name option](./readme-content/images/invalid-name-input.webp)
 
 <b>Game Menu -</b> When a correct name has been inputted, the user will be greeted with a welcome message followed by a menu with two options. 
@@ -201,7 +207,7 @@ The colours used for text through-out the game are:
 
  ![Return to Menu](./readme-content/images/return-to-menu.webp)
 
- 8. <b>Favicon -</b> I have added a favicon to make the site look more distinguishable and professional. As you might be able to see from previous commits, getting this favicon icon to appear was difficult. I resorted in hosting the image on [ImgPile](https://imgpile.com/) and linking it in the head of my index and layout html pages.
+ <b>Favicon -</b> I have added a favicon to make the site look more distinguishable and professional. As you might be able to see from previous commits, getting this favicon icon to appear was difficult. I resorted in hosting the image on [ImgPile](https://imgpile.com/) and linking it in the head of my index and layout html pages.
 
  ![Chris's Hangman Tab](./readme-content/images/favicon-tab.webp)
 
