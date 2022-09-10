@@ -178,7 +178,8 @@ The game will be designed for a target audience of 12 years + as some of the wor
  8. <b>Favicon -</b> I have added a favicon to make the site look more distinguishable and professional. As you might be able to see from previous commits, getting this favicon icon to appear was difficult. I resorted in hosting the image on [ImgPile](https://imgpile.com/) and linking it in the head of my index and layout html pages.
 
  ![Chris's Hangman Tab](./readme-content/images/favicon-tab.webp)
- ![Favicon Image](./readme-content/images/favicon.png)
+ 
+ ![Favicon Image](./readme-content/images/favicon.webp)
 
 
 ***
