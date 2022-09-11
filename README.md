@@ -459,7 +459,7 @@ By forking the GitHub Repository you can make a copy of the original repository 
 ### Making a Local Clone
 #
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
 ![GitHub Repository](./readme-content/images/github-locate-repository.webp)
 
 2. On the repository main page, click the drop-down menu called Code.

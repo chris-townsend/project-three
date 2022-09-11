@@ -8,16 +8,17 @@ from words import WORDS
 from diagrams import player_lost, player_won, header
 from hangman import hangman
 
+# Colour variables used through-out the game
 YELLOW = '\033[33m'
 RED = '\033[0;31m'
 CYAN = '\033[36m'
 WHITE = '\033[37m'
 
-LIVES = 8
+LIVES = 8  # User Lives
 GAME_WON = False
-word = random.choice(WORDS)
-word = word.upper()
-REVEAL = list(len(word)*'_')
+word = random.choice(WORDS)  # Uses random module to randomise word
+word = word.upper()  # Converts the letter or word to uppercase
+REVEAL = list(len(word)*'_')  # Replaces _ and finds the letter within the word
 
 
 def ask_for_name():
@@ -139,8 +140,9 @@ def display():
 
 def check_letter(letter, key_word):
     """
-    A function that checks if the letter is within the key_word
-    Function returns True if won
+    A function that checks if the letter is within the key_word.
+    Function returns True and replaces _ with the letter if that
+    letter is within the word.
     """
     for i, letter in enumerate(key_word, 0):
         letter = key_word[i]
@@ -155,7 +157,7 @@ def check_letter(letter, key_word):
 # Main Game logic which checks if word has been guessed
 # within 8 lives
 # Prints either player_won or player_lost at end of gameplay,
-# with a choice to restart
+# with a choice of a conditioned restart
 
 
 while GAME_WON is False and LIVES > 0:
