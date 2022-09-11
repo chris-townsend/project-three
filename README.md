@@ -496,6 +496,10 @@ Various resources used to learn were:
 - [Stack Overflow](https://stackoverflow.com/)
 - [Codecademy](https://www.codecademy.com/)
 
+### Media
+#
+- The hangman favicon was taken from [Flaticon](https://www.flaticon.com/free-icons/).
+
 
 ### Acknowledgements
 #
