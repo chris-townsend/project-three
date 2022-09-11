@@ -503,4 +503,6 @@ Various resources used to learn were:
 
 -  [12 Beginner Python Projects - freeCodeCamp](https://www.youtube.com/watch?v=8ext9G7xspg)
 
+- The terminal function and template for the deployable application were provided by [Code Institute](https://codeinstitute.net/). The template is available for public use by clicking [here](https://github.com/Code-Institute-Org/python-essentials-template) and after, clicking on `Use this template`.
+
 -  I would like to thank my mentor Darío Carrasquel for guidance throughout the project.
