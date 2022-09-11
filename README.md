@@ -73,7 +73,7 @@ The game will be designed for a target audience of 12 years +  due to some of th
 #
 
 -   #### Wireframes
-Due to the style of the project, the wireframe has been kept basic. Some added styles might have changed since initially creating the wireframe. 
+Due to the style of the project, the wireframe has been kept basic. Some added styles might have changed since initially creating the wireframe. I have changed the original `run program` button to `run game` to fit the style of the content being displayed.
 
 ![Hangman wireframe](./readme-content/images/hangman-wireframe.webp)
 
