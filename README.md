@@ -37,6 +37,7 @@
     - [Making a local Clone](#making-a-local-clone)
 - [Credits](#credits)
     - [Content](#content)
+    - [Media](#media)
     - [Acknowledgements](#acknowledgements)
 
 ***
