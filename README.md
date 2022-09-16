@@ -102,10 +102,10 @@ The colours used for text throughout the game are:
 
 - `CYAN` = `'\033[36m'`
   - Return to the menu from the Instructions text
-  - Prints a line under the correct word after gameplay.
+  - Prints a line under the correct word after gameplay
    
 - `WHITE` = `'\033[37m'`
-  - Used to print the hangman until 1 live left
+  - Used to print the hangman until 1 life left
   - Prints lives left until 1 life left
   - User input for guessing a letter
 
