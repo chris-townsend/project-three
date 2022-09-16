@@ -377,6 +377,10 @@ I had a couple of errors with my check_letter function and Python tutor was hand
 I was also given a warning about iterating with range and len so I decided to use the enumerate method instead.
 ![Consider Using Enumerate](./readme-content/images/consider-enumerate.webp)
 
+After completing my project, I was left with a few problems in the terminal. Gitpod pre-installs some bits of code which aren't necessary for certain projects. As this code causes no problems to my work and is not needed, I have left these warnings as they are.
+
+![Terminal errors](./readme-content/images/terminal-error.webp)
+
 ***
 ## Deployment
 
